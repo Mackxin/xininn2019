@@ -96,38 +96,41 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: '首页', link: '/' },
-            { text: 'contact', link: 'contact' },
-            { text: 'about', link: 'about' },
-            { 
-              text: '分享', 
-              items:[
-                { text: '技术' , link:'/foo/'},
-                { text: '每日分享' , link:'/bar/'}
-              ]
-            },
-            { text: '掘金', link: 'https://juejin.im/' },
-            { text: 'GitHub', link: 'https://github.com/mackxin'},
-            { text: '知乎', link: 'https://www.zhihu.com/'},
+            { text: '馨客栈导航', link: 'http://mackxin.com/nav.html/' },
+            { text: '馨客栈前端导航', link: 'http://mackxin.com/webnav.html/' },
+            { text: '馨客栈每日分享', link: 'http://mackxin.com/fx.html/' },
+            // { text: 'contact', link: '/contact' },
+            // { text: 'about', link: '/about' },
+            // { 
+            //   text: '分享', 
+            //   items:[
+            //     { text: '技术' , link:'/foo/'},
+            //     { text: '每日分享' , link:'/bar/'}
+            //   ]
+            // },
+            // { text: '掘金', link: 'https://juejin.im/' },
+            { text: 'GitHub', link: 'https://github.com/mackxin'}
+            // { text: '知乎', link: 'https://www.zhihu.com/'},
             // 下拉列表显示分组
-            {
-                text: '学习',
-                items: [
-                { 
-                    text: '前端', 
-                    items: [
-                    { text: 'js', link: '/js/js' },
-                    { text: 'css', link: '/css/css' }
-                    ] 
-                },
-                { 
-                    text: '后端', 
-                    items: [
-                    { text: 'php', link: '/php/php' },
-                    { text: 'java', link: '/java/java'},
-                    ] 
-                },
-                ]
-            }
+            // {
+            //     text: '学习',
+            //     items: [
+            //     { 
+            //         text: '前端', 
+            //         items: [
+            //         { text: 'js', link: '/js/js' },
+            //         { text: 'css', link: '/css/css' }
+            //         ] 
+            //     },
+            //     { 
+            //         text: '后端', 
+            //         items: [
+            //         { text: 'php', link: '/php/php' },
+            //         { text: 'java', link: '/java/java'},
+            //         ] 
+            //     },
+            //     ]
+            // }
         ]
       }
 }
