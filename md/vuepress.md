@@ -3,27 +3,28 @@
 docs的目录结构:
 
 > ```
-> ├── docs
-> │   ├── .vuepress (可选的)
-> │   │   ├── components (可选的)
-> │   │   ├── theme (可选的)
-> │   │   │   └── Layout.vue
-> │   │   ├── public (可选的)
-> │   │   ├── styles (可选的)
-> │   │   │   ├── index.styl
-> │   │   │   └── palette.styl
-> │   │   ├── templates (可选的, 谨慎配置)
-> │   │   │   ├── dev.html
-> │   │   │   └── ssr.html
-> │   │   ├── config.js (可选的)
-> │   │   └── enhanceApp.js (可选的)
-> │   │ 
-> │   ├── README.md
-> │   ├── guide
-> │   │   └── README.md
-> │   └── config.md
-> │ 
-> └── package.json
+>  ├── myvuepress
+>  |   ├── docs
+>  |   │   ├── .vuepress (可选的)
+>  |   │   │   ├── components (可选的)
+>  |   │   │   ├── theme (可选的)
+>  |   │   │   │   └── Layout.vue
+>  |   │   │   ├── public (可选的)
+>  |   │   │   ├── styles (可选的)
+>  |   │   │   │   ├── index.styl
+>  |   │   │   │   └── palette.styl
+>  |   │   │   ├── templates (可选的, 谨慎配置)
+>  |   │   │   │   ├── dev.html
+>  |   │   │   │   └── ssr.html
+>  |   │   │   ├── config.js (可选的)
+>  |   │   │   └── enhanceApp.js (可选的)
+>  |   │   │ 
+>  |   │   ├── README.md
+>  |   │   ├── guide
+>  |   │   │   └── README.md
+>  |   │   └── config.md
+>  |   │ 
+>  |   └── package.json
 > 
 > 
 > ```
@@ -96,11 +97,9 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: '首页', link: '/' },
-<<<<<<< HEAD
-            { text: '馨客栈导航', link: 'http://mackxin.com/nav.html/' },
-            { text: '馨客栈前端导航', link: 'http://mackxin.com/webnav.html/' },
+            { text: '馨客栈导航', link:'http://mackxin.com/nav.html/' },
+            { text: '馨客栈前端导航', link:'http://mackxin.com/webnav.html/' },
             { text: '馨客栈每日分享', link: 'http://mackxin.com/fx.html/' },
-            // { text: 'contact', link: '/contact' },
             // { text: 'about', link: '/about' },
             // { 
             //   text: '分享', 
@@ -109,42 +108,7 @@ module.exports = {
             //     { text: '每日分享' , link:'/bar/'}
             //   ]
             // },
-            // { text: '掘金', link: 'https://juejin.im/' },
-            { text: 'GitHub', link: 'https://github.com/mackxin'}
-            // { text: '知乎', link: 'https://www.zhihu.com/'},
-            // 下拉列表显示分组
-            // {
-            //     text: '学习',
-            //     items: [
-            //     { 
-            //         text: '前端', 
-            //         items: [
-            //         { text: 'js', link: '/js/js' },
-            //         { text: 'css', link: '/css/css' }
-            //         ] 
-            //     },
-            //     { 
-            //         text: '后端', 
-            //         items: [
-            //         { text: 'php', link: '/php/php' },
-            //         { text: 'java', link: '/java/java'},
-            //         ] 
-            //     },
-            //     ]
-            // }
-=======
-            { text: 'contact', link: 'contact' },
-            { text: 'about', link: 'about' },
-            { 
-              text: '分享', 
-              items:[
-                { text: '技术' , link:'/foo/'},
-                { text: '每日分享' , link:'/bar/'}
-              ]
-            },
-            { text: '掘金', link: 'https://juejin.im/' },
             { text: 'GitHub', link: 'https://github.com/mackxin'},
-            { text: '知乎', link: 'https://www.zhihu.com/'},
             // 下拉列表显示分组
             {
                 text: '学习',
@@ -165,8 +129,9 @@ module.exports = {
                 },
                 ]
             }
->>>>>>> e46e4c17d588c1a03ca6fd21963d5d47ad79d734
-        ]
+        ],
+        sidebarDepth: 2,
+        lastUpdated: 'Last Updated',
       }
 }
 ```
@@ -279,3 +244,143 @@ footer: MIT Licensed | Copyright © 2018-Mackxin
 # hell mackxin
 ```
 
+## 部署到Github
+
+这里介绍的是手动部署的哈，比较麻烦哈
+
+```
+//.vuepress config.js
+module.exports = {
+  title : '馨客栈',
+  description : '关注分享，关注导航，关注馨客栈',
+  base: '/vuepress/'      默认是'/'，如果你要用某个仓库就跟我一样把仓库名写上
+}
+```
+
+官网是这样介绍的哈
+
+```
+1.在 docs/.vuepress/config.js 中设置正确的 base。
+
+2.如果你打算发布到 https://<USERNAME>.github.io/，则可以省略这一步，因为 base 默认即是 "/"。
+
+3.如果你打算发布到 https://<USERNAME>.github.io/<REPO>/（也就是说你的仓库在 https://github.com/<USERNAME>/<REPO>），则将 base 设置为 "/<REPO>/"。
+```
+
+我这里是以一个仓库名为vuepress来部署的哈
+
+```javascript
+在执行命令之前你要在你的上一级目录的 package.json 文件中写一段代码
+{
+	"scripts" : {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    }
+}
+```
+
+上面的配置好后，接着来哈
+
+### 1.在项目根目录执行命令   `npm run docs:build`
+
+```
+$ npm run docs:build
+
+> vpress@1.0.0 docs:build C:\Users\xininn\Desktop\vpress
+> vuepress build docs
+
+
+ WAIT  Extracting site metadata...
+[11:30:12] Compiling Client
+[11:30:14] Compiling Server
+[11:30:46] Compiled Server in 32s
+[11:30:46] Compiled Client in 33s
+ WAIT  Rendering static HTML...
+
+ DONE  Success! Generated static files in docs\.vuepress\dist.
+//执行完成功后你会看到这个哈
+```
+
+### 2.进入到生成的静态文件目录dist内
+
+```
+在你的项目里的.vuepress内的dist文件夹内
+cd .vuepress/dist
+```
+
+目录结构大概是下面这样的
+
+```
+├─dist // dist目录下
+│ ├─assets //文件夹的名字
+| index.html  //主文件
+| 404.html    //404文件
+| ***.ico  //图片
+···可能还有很多你新建的文件和文件夹
+```
+
+再次提醒哈，现在你的命令行要在dist文件夹下哈
+
+ ~/Desktop/vpress/docs`
+
+接下来就是执行Git的命令了
+
+```
+说先要先初始化你的这个文件夹为仓库
+然后提交你的所有文件到版本控制中
+最后提交一下你这个的操作
+命令如下，依次执行
+git init
+git add -A
+git commit -m 'deploy'
+```
+
+```
+上面代码执行成功后大概就是下面这样哈
+$ git init
+Initialized empty Git repository in C:/Users/xininn/Desktop/vpress/docs/.vuepress/dist/.git/
+
+$ git add -A
+warning: LF will be replaced by CRLF in 404.html.
+The file will have its original line endings in your working directory
+
+$ git commit -m 'deloy'
+[master (root-commit) 4554481] deloy
+ 34 files changed, 507 insertions(+)
+ create mode 100644 ···
+```
+
+到最重要的环节了
+
+```
+先确定你的用户名是什么，仓库名是什么。
+我这里我的用户名是mackxin，仓库名是vuepress
+# 如果发布到 https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+```
+
+最后我要访问的网址是https://mackxin.github.io/vuepress
+
+那么我只要输入这样命令即可
+
+```
+git push -f git@github.com:mackxin/vuepress.git master:gh-pages
+```
+
+成功后的提示是
+
+```
+$ git push -f git@github.com:mackxin/vuepress.git master:gh-pages
+Enumerating objects: 46, done.
+Counting objects: 100% (46/46), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (46/46), 76.31 KiB | 930.00 KiB/s, done.
+Total 46 (delta 22), reused 0 (delta 0)
+remote: Resolving deltas: 100% (22/22), done.
+To github.com:mackxin/vuepress.git
+ * [new branch]      master -> gh-pages
+
+```
+
+现在打开你的网址可以正常访问了
