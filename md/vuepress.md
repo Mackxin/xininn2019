@@ -97,9 +97,9 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: '首页', link: '/' },
-            { text: '馨客栈导航', link:'http://mackxin.com/nav.html/' },
-            { text: '馨客栈前端导航', link:'http://mackxin.com/webnav.html/' },
-            { text: '馨客栈每日分享', link: 'http://mackxin.com/fx.html/' },
+            { text: '馨客栈导航', link:'http://mackxin.com/nav.html' },
+            { text: '馨客栈前端导航', link:'http://mackxin.com/webnav.html' },
+            { text: '馨客栈每日分享', link: 'http://mackxin.com/fx.html' },
             // { text: 'about', link: '/about' },
             // { 
             //   text: '分享', 
