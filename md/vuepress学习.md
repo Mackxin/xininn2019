@@ -129,9 +129,15 @@ footer: MIT Licensed | Copyright © 2018-present Mackxin
 module.exports = {
     title : 'mackxin',
     description : 'xininn',
+    base: '/', // 这是部署到github相关的配置
+    markdown: {
+        lineNumbers: false // 代码块显示行号
+    },
     head : [
         ['link',{rel:'icon',href:'/mackxin.ico'}]
-    ]
+    ],
+    sidebar: 'auto', // 侧边栏配置
+    sidebarDepth: 2, // 侧边栏显示2级
 }
 ```
 
@@ -398,5 +404,23 @@ To github.com:mackxin/vblog.git
 
 现在你打开你的网站 ，我的就是     https://mackxin.github.io/vblog/
 
+### 部署到自己的域名下
 
+首先到你的个人域名的管理后天，进行解析我们来添加一下记录
+
+- 记录类型我们选择 A 类型哈
+- 主机记录，一个www 一个@
+- 解析路线我们默认就好了
+- 记录值看下面我的介绍
+  - 我的域名是mackxin.github.io  ,那么我们要获得这个的ip的话我们就要ping一下
+  - 在命令行输入：`ping mackxin.github.io`然后回车，稍等一下，你就可以看到你的ip值了
+
+```
+Ping mackxin.github.io [185.199.110.153]
+这里我们需要的值就是185.199.110.153了
+```
+
+添加 CNAME 文件
+
+在仓库 mackxin.github.io 中找到 Settings > Custom domain 把 www.liweiwen.top 添加进去即可
 
