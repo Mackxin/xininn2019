@@ -40,6 +40,7 @@ header .x-logo a img:hover{
 }
 .x-nav div{
     position: relative;
+    overflow: hidden;
 }
 .x-nav div a{
     display: block;
@@ -51,7 +52,6 @@ header .x-logo a img:hover{
     text-align: center;
     transition: 1s;
     font-weight: bold;
-    border: 1px solid #f6f5f5;
 }
 .x-nav div a::before{
     content: '';
@@ -66,10 +66,21 @@ header .x-logo a img:hover{
     right: 1px;
 }
 .x-nav div a:hover{
-    background-color: #ff1d55;
-    color: #fff;
     text-align: center;
     font-size: 16px;
+}
+.x-nav div a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background-color: #ff1d55;
+    left: 100%;
+    bottom: 0px;
+    transition: all .3s ease-in-out;
+}
+.x-nav div a:hover::after{
+    left: 0;
 }
 .x-h1{
     width: 100%;
