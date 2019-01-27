@@ -10,6 +10,7 @@ html,body{
 a{
     text-decoration: none;
 }
+
 /*head start*/
 .fx-head{
     width: 100%;
@@ -29,8 +30,15 @@ a{
     justify-content: center;
     align-items: center;
 }
-.fx-head .fx-box .fx-head-left img{
+.fx-head .fx-box .fx-head-left a img{
     width: 150px; 
+    height: 150px;
+    transition: .8s ease-in-out;
+    overflow: hidden;
+
+}
+.fx-head .fx-box .fx-head-left a img:hover{
+    transform: rotate(360deg);
 }
 .fx-head .fx-box .fx-head-right{
     color: #ff1d55;
@@ -138,6 +146,7 @@ a{
     justify-content: space-between;
     background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
     border-radius: 10px 10px 0px 0px;
+    color: #222120;
 
 }
 .fx-cons .fx-con .fx-con-tou h2{
@@ -216,3 +225,46 @@ a{
     }
 }
 /*分享主要内容代码结束*/
+
+/*footer start*/
+.footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: -50px;
+}
+.footer p{
+    line-height: 26px;
+}
+/*footer end*/
+
+.fx-cons .fx-con .color-1 {
+    /*background-color: Chocolate;*/
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+.fx-cons .fx-con .color-2 {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.fx-cons .fx-con .color-3 {
+    background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+}
+.fx-cons .fx-con .color-4 {
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+.fx-cons .fx-con .color-5 {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.fx-cons .fx-con .color-6 {
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+.fx-cons .fx-con .color-7 {
+    background-image: linear-gradient(to left, #c471f5 0%, #fa71cd 100%);
+}
+.fx-cons .fx-con .color-8 {
+    background-image: linear-gradient(to right, #0ba360 0%, #3cba92 100%);
+}
+.fx-cons .fx-con .color-9 {
+    background-image: linear-gradient(to left, #0250c5 0%, #d43f8d 100%);
+}
