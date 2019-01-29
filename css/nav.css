@@ -391,6 +391,9 @@ footer .x-footer img {
     width: 150px;
     height: 150px;
 }
+footer .x-footer img:first-of-type{
+    margin-right: 4px;
+}
 footer p {
     text-align: center;
     color: #647d89;
