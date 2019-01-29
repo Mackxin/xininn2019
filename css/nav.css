@@ -22,7 +22,7 @@ html{
 .head{
     width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .head .head-box{
     width: 80%;
@@ -359,6 +359,7 @@ html{
         height: 30px;
         line-height: 30px;
         font-size: 12px;
+        width: 70px;
     }
     .head .head-box .head-box-left .head-left-con p{
         font-weight: 600;
@@ -368,8 +369,9 @@ html{
 @media (max-width:320px){     /*5s*/
     .nav-content .nav-content-box section .nav-content-top{
         font-size: 0.8rem;
-    }.nav-content .nav-content-box section .nav-content-top .nav-content-top-right a{
-        width: 80px;
+    }
+    .nav-content .nav-content-box section .nav-content-top .nav-content-top-right a{
+        width: 60px;
     }
 }
 /*content end*/
