@@ -314,7 +314,7 @@ html{
         width: 33.33%;
     }
 }
-@media (max-width:414px){     /*7 plus*/
+/* @media (max-width:414px){     
     .nav-content .nav-content-box section ul li{
         width: 50%;
     }
@@ -330,7 +330,7 @@ html{
         line-height: 30px;
         font-size: 12px;
     }
-}
+} */
 @media (max-width:414px){     /*7 plus*/
     .nav-content .nav-content-box section ul li{
         width: 50%;
@@ -349,6 +349,9 @@ html{
     }
     .fx-update .fx-update-box .fx-update-con .xiaoxi p{
         font-size: .9rem;
+    }
+    .nav-content .nav-content-box{
+        width: 100%;
     }
 }
 @media (max-width:375px){     /*7*/
