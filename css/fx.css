@@ -198,8 +198,25 @@ a{
         font-size: 14px;
         line-height: 22px;
     }
+    .fx-update{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fx-update .fx-update-box{
+        width: 100%;
+    }
+    .fx-cons{
+        width: 90%;
+    }
 }
 @media screen and (max-width:414px) {
+    .fx-head .fx-box{
+        width: 90%;
+        height: 250px;
+    }
+    .fx-update{
+        margin-top: 50px;
+    }
     .fx-update .fx-update-box .fx-update-con .xiaoxi p{
         font-size: 12px;
         line-height: 14px;
