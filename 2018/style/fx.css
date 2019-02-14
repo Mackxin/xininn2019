@@ -1,0 +1,327 @@
+/*
+* @Author: Marte
+* @Date:   2017-11-30 08:52:00
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-03-03 17:06:40
+* 新的分享页面，每天分享，欢迎投稿
+* 大量使用flex布局，css3等特性来实现网页的效果
+* 本次更新的只有这个全新页面，估计会有多次修改和调试
+*/
+div,p,span,a,ul,li,header,h1,h2,h3,h4,section,html,body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-weight: 400;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #537895;
+    /*background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: SlateGray;
+}
+#x-t{
+    width: 1200px;
+    height: 150px;
+    color: #fff;
+    text-align: center;
+}
+#x-t h1{
+    font-size: 66px;
+}
+#x-t h2{
+    font-size: 25px;
+}
+.x-fx{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.x-fx .x-box{
+    width: 1000px;
+    height: 220px;
+    background-color: #fff;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.x-fx .x-box h2{
+    background-color: SlateGray;
+    text-align: center;
+    color: #fff;
+    height: 30px;
+    line-height:30px;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+}
+.x-fx .x-box .con{
+    height: 160px;
+    box-sizing: border-box;
+    padding: 10px 100px;
+    text-align: center;
+}
+.x-fx .x-box .con .x-v{
+    font-family: "微软雅黑";
+    font-weight: 700;
+    font-size: 26px;
+    color: MediumPurple;
+    margin: 20px 0px;
+}
+.x-fx .x-box .con .x-one{
+    font-family: "微软雅黑";
+    font-weight: 700;
+    font-size: 26px;
+    color: MediumPurple;
+    margin: 5px 0px;
+}
+.x-fx .x-box .con .x-down{
+    display: block;
+    width: 150px;
+    height:30px;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 30px;
+    background-color: Crimson;
+    border-radius: 30px;
+    transition: 1.5s;
+}
+.x-fx .x-box .con .x-down:hover{
+    background-color: CornflowerBlue;
+}
+.x-fx .x-box .con .x-mi{
+    line-height: 30px;
+    font-size: 18px;
+}
+.x-fx .x-box .con .x-go{
+    font-size: 22px;
+    color: Crimson;
+}
+.x-fx .x-box .bx{
+    display:flex;
+    height: 30px;
+    font-size: 18px;
+    justify-content: space-between;
+    color: OrangeRed;
+}
+.x-fx .x-box .bx .x-ren{
+    line-height: 30px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: Magenta;
+}
+.x-fx .x-box .bx .x-ren{
+    font-weight: 700;
+    font-size: 18px;
+}
+.x-fx .x-box .bx .x-time{
+    color: Crimson;
+    margin-right: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+@media (max-width:1200px){
+    #x-t{
+        width: 1000px;
+    }
+    .x-fx{
+        width: 1000px;
+    }
+}
+@media (max-width:1000px){
+    #x-t{
+        width: 800px;
+    }
+    .x-fx{
+        width: 800px;
+    }
+    .x-fx .x-box{
+        width:750px;
+    }
+}
+@media (max-width:800px){
+    #x-t{
+        width: 700px;
+    }
+    .x-fx{
+        width: 700px;
+    }
+    .x-fx .x-box{
+        width: 650px;
+    }
+    .x-fx .x-box .con{
+        padding: 10px 20px;
+    }
+    .x-fx .x-box .con .x-one{
+        font-size: 20px;
+    }
+}
+@media (max-width:700px){
+    #x-t{
+        width: 550px;
+    }
+    #x-t h1{
+        font-size: 48px;
+    }
+    #x-t h2{
+        font-size: 29px;
+    }
+    .x-fx{
+        width: 550px;
+    }
+    .x-fx .x-box{
+        width: 500px;
+    }
+    .x-fx .x-box .con{
+        padding: 10px 20px;
+    }
+    .x-fx .x-box .con .x-one{
+        font-size: 18px;
+    }
+    .x-fx .x-box .con .x-v{
+        font-size: 18px;
+    }
+}
+@media (max-width:550px){
+    #x-t{
+        width: 400px;
+    }
+    #x-t h1{
+        font-size: 48px;
+    }
+    #x-t h2{
+        font-size: 29px;
+    }
+    .x-fx{
+        width: 400px;
+    }
+    .x-fx .x-box{
+        width: 400px;
+    }
+    .x-fx .x-box .con .x-v{
+        font-size: 18px;
+    }
+}
+@media (max-width:414px){    //iphone6 plus
+    #x-t{
+        width: 400px;
+        height:140px;
+    }
+    #x-t h1{
+        font-size: 48px;
+    }
+    #x-t h2{
+        font-size: 29px;
+    }
+    .x-fx{
+        width: 400px;
+    }
+    .x-fx .x-box{
+        width: 380px;
+    }
+    .x-fx .x-box .con .x-v{
+        font-size: 18px;
+    }
+}
+@media (max-width:375px){    //iphone6
+    #x-t{
+        width: 355px;
+        height: 130px;
+    }
+    #x-t h1{
+        font-size: 38px;
+    }
+    #x-t h2{
+        font-size: 30px;
+    }
+    .x-fx{
+        width: 355px;
+    }
+    .x-fx .x-box{
+        width: 340px;
+    }
+    .x-fx .x-box .con .x-v{
+        font-size: 18px;
+    }
+    .x-fx .x-box .x-bx .x-ren{
+        font-size: 12px;
+    }
+    .x-fx .x-box .x-bx .x-time{
+        font-size: 12px;
+        margin-right: 0px;
+    }
+}
+@media (max-width:320px){   //iphone5
+    #x-t{
+        width: 300px;
+        height: 130px;
+    }
+    #x-t h1{
+        font-size: 33px;
+    }
+    #x-t h2{
+        font-size: 22px;
+    }
+    .x-fx{
+        width: 300px;
+    }
+    .x-fx .x-box{
+        width: 290px;
+        height: 250px;
+    }
+    .x-fx .x-box .con{
+        padding: 10px 20px;
+        box-sizing: border-box;
+        height: 190px;
+    }
+    .x-fx .x-box .con .x-v{
+        margin: 25px 0px;
+        font-size: 18px;
+    }
+    .x-fx .x-box .x-bx .x-ren{
+        font-size: 12px;
+    }
+    .x-fx .x-box .x-bx .x-time{
+        font-size: 12px;
+        margin-right: 2px;
+    }
+}
+
+.x-fx .x-box h2.x-1{
+    /*background-color: Chocolate;*/
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+.x-fx .x-box h2.x-2{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.x-fx .x-box h2.x-3{
+    background-image: linear-gradient(to left, #30cfd0 0%, #330867 100%);
+}
+.x-fx .x-box h2.x-4{
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+.x-fx .x-box h2.x-5{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.x-fx .x-box h2.x-6{
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+.x-fx .x-box h2.x-7{
+    background-image: linear-gradient(to left, #c471f5 0%, #fa71cd 100%);
+}
+.x-fx .x-box h2.x-8{
+    background-image: linear-gradient(to right, #0ba360 0%, #3cba92 100%);
+}
+.x-fx .x-box h2.x-9{
+    background-image: linear-gradient(to left, #0250c5 0%, #d43f8d 100%);
+}

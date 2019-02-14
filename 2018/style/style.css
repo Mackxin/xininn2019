@@ -1,0 +1,86 @@
+/*
+* @Author: Mackxin
+* @Date:   2017-08-14 17:43:17
+* @Last Modified by:   Mackxin
+* @Last Modified time: 2017-08-19 21:37:45
+* 新的导航，新的网站，新的技术
+* 大量使用flex布局，css3等特性来实现网页的效果
+* 本次重构的主题是馨客栈主页的重新规划设计
+* 还有就是馨客栈导航的优化布局以及效果演示
+*/
+div,p,span,a,ul,li,header,h1,h2,h3,h4,section,html,body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+ul li,.x-box .x-boxs .x-lis li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+header .x-logo img{
+    width: 150px;
+    height: 150px;
+}
+header .x-logo a:hover{
+    transform: translate(360deg);
+}
+.x-nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.x-nav div a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    color: #ff1d55;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    transition: 1s;
+    font-weight: bold;
+}
+.x-nav div a:hover{
+    background-color: #ff1d55;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.x-h1{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.x-h1 h1{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ff1d55;
+}
+@media screen and (min-width:320px) and (max-width:736px){
+    .x-nav{
+        margin-bottom: 50px;
+    }
+
+}

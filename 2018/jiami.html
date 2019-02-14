@@ -1,0 +1,117 @@
+<!-- 源码来源网络，我只是稍加修改了一下哈 2018-08-20 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>馨客栈|馨客栈转换</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        section{
+            width: 800px;
+            height: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -75px;
+            margin-left: -400px;
+            box-sizing: border-box;
+            padding: 10px;
+            padding-left: 20px;
+        }
+        input[type='text']{
+            margin: -5px;
+            vertical-align: 2px;
+        }
+        input#c,
+        input#a{
+            width: 300px;
+            height: 45px;
+        }
+        input#d,
+        input#b{
+            width: 150px;
+            height: 50px;
+            border: none;
+            background-color: #ff1143;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <input type="text" id="c" style="width:600px;">
+            <input type="button" id="d" value="伪加密转换乱码">
+        </div>
+        <br>
+        <div>
+            <input type="text" id="a" style="width:600px;">
+            <input type="button" id="b" value="伪解密转换答案">
+        </div>
+    </section>
+    
+
+</body>
+<script>
+    var t='magnet:?xt=urn:btih:';
+    var obja={
+        "赵":"0", "钱":"1", "孙":"2", "李":"3", "周":"4", "吴":"5", "郑":"6", "王":"7", "冯":"8", "陈":"9",
+        "褚":"a", "卫":"b", "蒋":"c", "沈":"d", "韩":"e", "杨":"f", "朱":"g", "秦":"h", "尤":"i", "许":"j",
+        "何":"k", "吕":"l", "施":"m", "张":"n", "孔":"o", "曹":"p", "严":"q", "华":"r", "金":"s", "魏":"t",
+        "陶":"u", "姜":"v", "戚":"w", "谢":"x", "邹":"y", "喻":"z", "柏":"A", "水":"B", "窦":"C", "章":"D",
+        "云":"E", "苏":"F", "潘":"G", "葛":"H", "奚":"I", "范":"J", "彭":"K", "郎":"L", "鲁":"M", "韦":"N",
+        "昌":"O", "马":"P", "苗":"Q", "凤":"R", "花":"S", "方":"T", "俞":"U", "任":"V", "袁":"W", "柳":"X",
+        "唐":"Y", "罗":"Z", "薛":".", "伍":"-", "余":"_", "米":"+", "贝":"=", "姚":"/", "孟":"?", "顾":"#",
+        "尹":"%", "江":"&", "钟":"*"
+    };
+
+    var b = document.getElementById("b");
+    b.addEventListener("click", function() {
+        var str = document.getElementById("a").value;
+        str=str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+        var strc = str.split("");
+        var c  = '';
+        for(var i=0;i<strc.length;i++){
+            var o=cy(obja,strc[i]);
+            c +=o;
+        }
+        c=t+c;
+        document.getElementById('c').value=c;
+    });
+
+    var d = document.getElementById("d");
+    d.addEventListener("click", function() {
+        var str = document.getElementById("c").value;
+        str=str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+        var v=str.replace(/magnet:\?xt=urn:btih:/,"");
+        var strc = v.split("");
+        var a  = '';
+        for(var i=0;i<strc.length;i++){
+            a +=ay(obja,strc[i]);
+        }
+        document.getElementById('a').value=a;
+    });
+
+
+    function cy(array,val){
+        for( var key in array ){
+            if(key==val){
+                return array[key];
+            }
+        }
+        return '';
+    }
+    function ay(array,val){
+        for( var key in array ){
+            if(array[key]==val){
+                return key;
+            }
+        }
+        return '';
+    }
+</script>
+</html>
