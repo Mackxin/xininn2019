@@ -16,6 +16,10 @@ html,body{
 html{
     font-size: 16px;
 }
+::selection {
+    background:#ff1d55; 
+    color:#fff;
+}
 /*公共代码结束*/
 
 /*head start*/

@@ -9,6 +9,10 @@ ul li,.x-box .x-boxs .x-lis li{
 a{
     text-decoration: none;
 }
+::selection {
+    background:#ff1d55; 
+    color:#fff;
+}
 html,body{
     width: 100%;
     height: 100%;

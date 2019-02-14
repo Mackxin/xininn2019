@@ -10,7 +10,10 @@ html,body{
 a{
     text-decoration: none;
 }
-
+::selection {
+    background:#ff1d55; 
+    color:#fff;
+}
 /*head start*/
 .fx-head{
     width: 100%;
