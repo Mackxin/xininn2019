@@ -108,6 +108,19 @@ html{
     height: 35px;
     transition: all .3s ease-in-out;
 }
+.head .head-box .head-box-right .head-right-fx ul li.active::before,
+.head .head-box .head-box-right .head-right-contact ul li.active::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #ff1d55;
+    border-right: 5px solid #ff1d55;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 1px;
+}
 .head .head-box .head-box-right .head-right-fx ul li::after,
 .head .head-box .head-box-right .head-right-contact ul li::after{
     content: '';
@@ -120,8 +133,8 @@ html{
     bottom: 0px;
     transition: all .3s ease-in-out;
 }
-.head .head-box .head-box-right .head-right-fx ul li a:hover::after,
-.head .head-box .head-box-right .head-right-contact ul li a:hover::after{
+.head .head-box .head-box-right .head-right-fx ul li:hover::after,
+.head .head-box .head-box-right .head-right-contact ul li:hover::after{
     left: 0;
 }
 .head .head-box .head-box-right .head-right-fx ul li a:hover,
@@ -336,19 +349,6 @@ html{
     }
     .fx-update .fx-update-box .fx-update-con .xiaoxi p{
         font-size: .9rem;
-    }
-    .head .head-box .head-box-right .head-right-fx ul li a::before,
-    .head .head-box .head-box-right .head-right-contact ul li a::before{
-        content: '';
-        width: 0px;
-        height: 0px;
-        border: 8px solid transparent;
-        border-top: 8px solid #ff1d55;
-        border-right: 8px solid #ff1d55;
-        display: inline-block;
-        position: absolute;
-        top: 1px;
-        right: 1px;
     }
 }
 @media (max-width:375px){     /*7*/
