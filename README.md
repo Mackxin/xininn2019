@@ -13,5 +13,9 @@
 
 **[馨客栈更新计划](http://mackxin.com/update.html)**
 
+**[馨客栈电商导航](http://mackxin.com/dianshang.html)**
+
+**[馨客栈设计导航](http://mackxin.com/sheji.html)**
+
 
 2019.02.19 馨客栈2019版全新的导航站，还在持续的更新中
