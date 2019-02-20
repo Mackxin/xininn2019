@@ -424,3 +424,62 @@ Ping mackxin.github.io [185.199.110.153]
 
 在仓库 mackxin.github.io 中找到 Settings > Custom domain 把 www.liweiwen.top 添加进去即可
 
+### 安装Valine评论功能
+
+[Valine官网](https://valine.js.org/)
+
+#### 安装Valine
+
+```javascript
+# Install leancloud's js-sdk
+npm install leancloud-storage --save
+
+# Install valine
+npm install valine --save
+```
+
+#### 注册 vuepress 全局组件
+
+首先创建一个Valine.vue文件，具体目录结构是在 **.vuepress/components/Valine.vue**
+
+```javascript
+<template>
+  <div id="vcomments"></div>
+</template>
+
+<script>
+export default {
+  name: 'Valine',
+  mounted: function(){
+    // require window 
+    const Valine = require('valine');
+    if (typeof window !== 'undefined') {
+      this.window = window
+      window.AV = require('leancloud-storage')
+      
+    }
+     
+    new Valine({
+      el: '#vcomments' ,
+      appId: '',// 这里填你的appId
+      appKey: '', // 这里填你的appKey
+      notify:false, 
+      verify:false, 
+      avatar:'mm', 
+      placeholder: 'just go go' 
+    });
+  },
+}
+</script>
+```
+
+#### 获取appId和appKey
+
+我们直接去官网   [leancloud官网](https://leancloud.cn/)   登陆创建一个应用，然后在新创建的应用的设置中找到应用key，这样你就可以看到你需要的appId和appKey了
+
+#### 最后就是使用Valine了
+
+我们只需要在想用评论的markdown文件中调用即可，直接在markdown文件的最后添加下面的代码就可以了
+
+`<Valine></Valine>`
+
