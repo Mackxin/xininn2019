@@ -135,9 +135,7 @@ module.exports = {
     },
     head : [
         ['link',{rel:'icon',href:'/mackxin.ico'}]
-    ],
-    sidebar: 'auto', // 侧边栏配置
-    sidebarDepth: 2, // 侧边栏显示2级
+    ]
 }
 ```
 
@@ -191,7 +189,9 @@ module.exports = {
             }
         ],
         sidebarDepth: 2,
-        lastUpdated: 'Last Updated'
+        lastUpdated: 'Last Updated',
+        sidebar: 'auto', // 侧边栏配置
+    	sidebarDepth: 2, // 侧边栏显示2级
       }
 }
 ```
