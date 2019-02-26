@@ -185,3 +185,43 @@
 [aquawu.github.io/igg](igg)
 
 [apt.25mao.com](老猫)
+
+> 让老机型实现 iPhone X 手势操作和界面的插件 HomeGesture 测试兼容至 iOS 12.1.2 [源地址](https://repo.dynastic.co/) 
+> 如果在安装过程中遇到 com.spark.libsparkapplist 依赖缺失，只需要添加 [源地址](https://repo.packix.com/)
+
+> FloatyDock 插件可以让 iPhone 实现和 iPad 一样的 Dock 栏风格 测试兼容至 iOS 12.1.2 自带 BigBoss 源就能下载 ​​​​
+
+> 最近很多小伙伴私信问如何解除 iOS 12 的越狱环境恢复出厂设置，可以使用 unc0ver 回到最初的无越狱系统快照环境：
+> 重启手机后打开 unc0ver-Settings，将【Restore RootFS (rec0ver)】打开，最后点击【Jailbreak】即可
+
+> 强烈推荐安装 Cydia 的功能增强插件 SwipeForMore 安装之后左滑 Cydia 里的插件就可以呼出【列表安装/卸载】等功能，
+> 有效解决插件每次安装或卸载都需要注销一次的繁琐过程 只需在设置里将 SwipeForMore 的 Use icons 开关关闭即可中文显示自带 BigBoss 就能下载，兼容至 iOS 12.1.2
+
+> 不一样的音量调节弹窗插件 VideoHUD 更新兼容性至 iOS 12.1.2 自带 BigBoss 源就能下载 ​​​​
+
+> SugarCane 插件可以使控制中心里的亮度和音量条百分比显示 测试兼容至 iOS 12.1.2[源地址](https://repo.packix.com/)
+
+> ClearBadges3DTouch10 插件可以通过 3D Touch 功能呼出【Clear Badge Notifications】按钮，清理应用角标通知 测试兼容至 iOS 12.1.2自带 BigBoss 源就能下载
+
+> iOS12 状态栏 自定义网标文字
+> Safari Plus 插件
+
+> ForceInPicture 插件开启浏览器视频画中画功能，测试兼容至 iOS 12.1.2 自带 BigBoss 源就能下载
+
+> Electra 越狱工具推出的新版插件商店 Sileo 现在可以通过 [下载地址](https://app.ignition.fun/) 在线安装到 iOS 11-12.2 beta 3 非越狱设备上了 当然只有越狱之后才能安装里面的插件 其他只能看看
+
+> 每次越狱必装的 Cydown 插件测试已经兼容至 iOS 12.1.2有了它就可以免费下载 Cydia 里的收费插件，还可以提取插件的 DEB 安装包等 [作者源地址](http://julio.xarold.com/)
+
+> 如果使用了 unc0ver 越狱工具误装了不兼容的插件，导致注销后无限菊花，可先强制重启设备，再进入 unc0ver，将底部 Settings 里的 Load Tweaks 关闭，
+> 再重新点击 Jailbreak 激活越狱环境，激活后进入 Cydia 卸载不兼容的插件，卸载后即可重新打开 Load Tweaks 激活越狱环境让其他插件生效
+
+> Cydia 插件卸载教程：
+> 1. 打开 Cydia
+> 2. 点击底部菜单栏的【已安装】
+> 3. 点击需要卸载的插件，右上角卸载
+> 4. 卸载完成后【重启 SpringBoard】注销
+> 注意：部分特殊插件可能需要重启设备，重启之后一定要回到越狱工具里，点击 Jailbreak 激活越狱环境
+
+
+
+
