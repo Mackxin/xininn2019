@@ -2,9 +2,12 @@
 
 ```
 2019-03-09,开始这个页面资源的开篇，不定期分享一些资源
+2019-03-16,例行更新
 ```
 
 ## 如果链接失效什么的话，不要找我，我也没有备份的哈
+
+## 2019-03-09
 
 > 199元 许岑讲的PPT提升课   
 > 此教程适合以下人群：   
@@ -53,10 +56,63 @@
 > [下载地址](https://pan.baidu.com/s/1fucf-WXJZBN2zDCAbRCCeg)
 
 > 日本深夜食堂无删减版本分享   
-> 1—4季无删减高清版本，喜欢的转存一份   
+> 1—4季无删减高清版本，喜欢的转存一份    
 > [下载地址](https://pan.baidu.com/s/119yL7McETgOrWvGnD5lHoQ) 提取码：**hztf**    
 > [下载地址](https://pan.baidu.com/s/1R1IL7NlXWrQ9bWqsfoJYZA)   
 
-> 坚果Pro2 ROM分享
-> [下载地址](https://pan.baidu.com/s/1QiBQv4zDfyUb9lqW0D3KOA)
+> 坚果Pro2 ROM分享   
+> [下载地址](https://pan.baidu.com/s/1QiBQv4zDfyUb9lqW0D3KOA)   
 
+
+## 2019-03-16
+
+
+> 私房电子相册制作软件(旗舰版)   
+> [下载链接](https://pan.baidu.com/s/1Ikq2P--GBVeWEebxKpsimA)    
+> 提取码：8sw8   
+
+> ps教程 站酷高高手合集   
+> [下载链接](https://pan.baidu.com/s/18Y_v8CfQBYbdX2qFvuC6Xw)   
+> 提取密码：elmx   
+
+> baidu文档下载账号    
+> [网站](http://www.blpack.com/)   
+> 账号：343722874    
+> 密码：546031   
+> 在上面复制文档连接就好。还有2900财富值，先到先得
+
+> 共享个字体网站的帐号   
+> [字库网](http://www.zku.net/)   
+> 帐号：17199970014   
+> 密码：123321a    
+> 里面有几百万积分
+
+> 雅客Excel 36节课 轻松实现小白到高手的进阶
+> [下载链接](https://pan.baidu.com/s/1240G7H56xNSjSz3xgLaApA) 
+> 提取码：t0z0 
+
+> Adobe Premiere Pro CC 2018视频学习教程和素材   
+> [下载链接](https://pan.baidu.com/s/1NIBEd88alT62tetqVhNbkg)    
+> 密码:q582
+
+> ppt课程，《我懂个p，超人气课程》    
+> [下载链接](https://pan.baidu.com/s/1CWUqucj2m0lA7VIZseURRQ)       
+> 提取码：nzky 
+
+> 电脑版谷歌翻译客户端   
+> [官方网址](https://hypercube.top/copytranslator/)   
+> [下载链接](https://pan.baidu.com/s/1ICe_OQNnUW2KR2CtjN0k6g)    
+> 提取码：1t3k
+
+> windows软件卸载神器最新版本Revo Uninstaller Pro4.05   
+> [下载地址](http://t.cn/EIuODiP)
+
+> 2019电脑版初级会计题库软件   
+> [下载链接](https://pan.baidu.com/s/1eLg6qNG3qLatvCV7zSi4XQ)    
+> 提取码 vwog
+
+> 万兴PDF编辑器Wondershare PDFelement v6.8.8.4159中文破解   
+> [下载链接](http://t.cn/EfVsF5N)
+
+> 驾校科目一、科目四理论模拟考试系统   
+> [下载链接](https://www.lanzous.com/i3fve1e)
