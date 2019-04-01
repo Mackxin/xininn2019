@@ -391,3 +391,39 @@ footer p {
     color: #647d89;
 }
 /* footer end */
+
+/* 赞助页面代码开始 */
+.zz-box{
+    width: 100%;
+}
+.zz-box .zz-boxs{
+    width: 80%;
+    margin: 0 auto;
+}
+.zz-box .zz-boxs ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.zz-box .zz-boxs ul li{
+    width: 24%;
+    height: 400px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+@media (max-width:1550px){    
+    .zz-box .zz-boxs ul li{
+        width: 33.33333333%;
+    }
+}
+@media (max-width:1200px){    
+    .zz-box .zz-boxs ul li{
+        width: 50%;
+    }
+}
+@media (max-width:790px){    
+    .zz-box .zz-boxs ul li{
+        width: 100%;
+    }
+}
+/* 赞助页面代码结束 */
