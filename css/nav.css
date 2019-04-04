@@ -2,9 +2,11 @@ body,div,h1,h2,h3,p,a,span,ul,li,section{
     padding: 0;
     margin: 0;
 }
-body{
-    background: url(../img/beijing.jpg);
-}
+/* body{
+    background: url('../img/beijing.jpg') no-repeat center center;
+    background-attachment: fixed;
+    color: #fff;
+} */
 a{
     text-decoration: none;
     color: #ff1d55;

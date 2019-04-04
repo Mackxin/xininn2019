@@ -1,0 +1,160 @@
+div,
+body,
+html,
+p,
+a,
+h1,
+h2,
+h3,
+span {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url('../05/img/beijing.jpg') no-repeat center center;
+    background-attachment: fixed;
+    color: #222;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    width: 100%;
+}
+.sidenav {
+    height: 100%;
+    width: 16%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2195f391;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.sidenav h2 {
+    height: 10%;
+    color: #fff;
+    padding: 1.5rem;
+    ;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #FFF;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+.sidenav a.mackxin {
+    height: 3.5%;
+    font-size: 1.5rem;
+}
+
+.sidenav a:not(.mackxin) {
+    height: 2.7%;
+}
+
+.sidenav a:hover {
+    background-color: hsl(207, 82%, 51%);
+    color: #f1f1f1;
+}
+
+.con {
+    width: 84%;
+    z-index: 888;
+    margin-left: 16%;
+}
+
+.main {
+    margin: 10px auto;
+    font-size: 1.2rem;
+    border-radius: .6rem;
+    width: 60%;
+    color: #fff;
+    padding: .6rem;
+    transition: all 300ms ease-out;
+    background-color: #f5f3f318;
+}
+
+.main:not(.notone) {
+    border: 1px solid #f5f3f318;
+}
+.main:not(.notone):hover {
+    background-color: #f6f6f618;
+    color: #fff;
+}
+.main h2 {
+    text-align: center;
+    line-height: 3.6rem;
+    color: #ee0c0cd3;
+}
+.main a {
+    display: block;
+    text-align: center;
+}
+.main p {
+    font-size: 1.2rem;
+    text-indent: 2.4rem;
+}
+.main a img {
+    max-height: 400px;
+}
+.main p:last-child {
+    direction: rtl;
+}
+.main p.alick {
+    text-align: center;
+}
+
+.main p.alick a {
+    display: inline-block;
+    width: 12rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    text-indent: 0;
+    border: 1px solid #f5f3f318;
+    transition: .5s ease-in-out;
+    border-radius: .6rem;
+    color: #fff;
+    background-color: #ee0c0cd3;
+}
+
+.main p.alick a:hover {
+    transform: scale(1.1);
+}
+
+.main h1,
+.main h3 {
+    color: #fff;
+}
+
+.main p {
+    padding: .6rem;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*  */
