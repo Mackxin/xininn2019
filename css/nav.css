@@ -405,6 +405,14 @@ footer p {
     width: 80%;
     margin: 0 auto;
 }
+.zz-box .zz-boxs h2{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #ff1d55;
+    font-size: 2rem;
+}
 .zz-box .zz-boxs ul{
     display: flex;
     justify-content: space-around;
@@ -416,19 +424,71 @@ footer p {
     margin-bottom: 10px;
     text-align: center;
 }
+.zz-box .zz-boxs ul.zz-yue li{
+    height: 50px;
+}
+.zz-box .zz-boxs ul.zz-yue li a{
+    font-size: 1.8rem;
+    line-height: 50px;
+    color: #fff;
+    transition: .5s ease-in-out;
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(1){
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(2){
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(3){
+    background-image: linear-gradient(to left, #38dddd 0%, #7115e2 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(4){
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(5){
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(6){
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(7){
+    background-image: linear-gradient(to left, #c471f5 0%, #fa71cd 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(8){
+    background-image: linear-gradient(to right, #0ba360 0%, #3cba92 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(9){
+    background-image: linear-gradient(to left, #0250c5 0%, #d43f8d 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(10){
+    background-image: linear-gradient(120deg, #99b130 0%, #ff1d55 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(11){
+    background-image: linear-gradient(to right, #e243a5 0%, #ce2247 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:nth-child(12){
+    background-image: linear-gradient(to right, #921ae2 0%, #42d45a 100%);
+}
+.zz-box .zz-boxs ul.zz-yue li:hover a{
+    color: #345;
+}
 @media (max-width:1550px){    
     .zz-box .zz-boxs ul li{
-        width: 33.33333333%;
+        width: 30%;
     }
 }
 @media (max-width:1200px){    
     .zz-box .zz-boxs ul li{
-        width: 50%;
+        width: 48%;
+        margin-bottom: 10px;
     }
 }
 @media (max-width:790px){    
     .zz-box .zz-boxs ul li{
         width: 100%;
+    }
+    .zz-box .zz-boxs h2{
+        font-size: 1.8rem;
     }
 }
 /* 赞助页面代码结束 */
