@@ -130,6 +130,7 @@ a {
     border-radius: .6rem;
     color: #fff;
     background-color: #ee0c0cd3;
+    overflow: hidden;
 }
 
 .main p.alick a:hover {
