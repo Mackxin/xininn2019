@@ -296,6 +296,13 @@ html{
     .fx-update{
         margin-top: 110px;
     }
+    .head{
+        margin-bottom: 100px;
+    }
+    .head .head-box{
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media (max-width:1000px){
     .nav-content .nav-content-box section ul li{
@@ -305,6 +312,14 @@ html{
 @media (max-width:900px){
     .nav-content .nav-content-box section ul li{
         width: 25%;
+    }
+    .head{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width:767px){
+    .head{
+        margin-bottom: 210px;
     }
 }
 @media (max-width:749px){
