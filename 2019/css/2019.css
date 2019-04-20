@@ -12,7 +12,8 @@ span {
     box-sizing: border-box;
 }
 body {
-    background: url('../05/img/beijing.jpg') no-repeat center center;
+    /* background: url('../05/img/beijing.jpg') no-repeat center center; */
+    background: #2f62cf;
     background-attachment: fixed;
     color: #222;
 }
