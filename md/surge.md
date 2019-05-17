@@ -53,10 +53,13 @@ updated 1 package in 28.177s
 这里大体的把内容展示一下给你们看
 
 ```
-  Surge - surge.sh
+第一次开始大概是这个样子的
+  Welcome to Surge! (surge.sh)
+  Login (or create surge account) by entering email & password.
         email: 自己输入你的邮箱
-        token：自己输入你的密码
-        project path：这里会自动显示你当前的目录地址
+        password: 自己输入你的密码
+    Running as 你的邮箱地址 (Student)
+        project: j:\mackxin\xininn(这里会自动显示你的项目地址)
         domain：*****.surge.sh   注意这里的****是可以自定义的哈
         upload: [====================] 100% eta: 0.0s (127 files, 5275869 bytes)
             CDN: [====================] 100%
@@ -102,9 +105,15 @@ Running as 你的邮箱地址（Student）
 
 我们在终端输入命令`surge ./` 然后回车确定等待部署成功就好了
 
+## 如何退出当前的邮箱
 
+只要一个命令就可以退出当前的账号
 
+```
+surge logout
+```
 
+##
 
 
 
