@@ -113,7 +113,85 @@ Running as 你的邮箱地址（Student）
 surge logout
 ```
 
-##
+## 自定义404页面
+
+我们只需要在根目录下建立一个`404.html`这个文件，然后我们自己编写我们的404的代码就可以了，完了后更新代码推送一下就可以看到了
+
+## 强制使用https访问
+
+我们只需要输入一行代码就可以了
+
+```
+surge --domain https://xininn.surge.sh
+```
+
+## 自定义域名
+
+在你的域名哪里解析一下(下面列举的是我在阿里万网解析的，你也可以用CNAME类型来解析，我试过也是可以的，下面演示的是A类型来解析哈)
+
+| 记录类型 | 主机记录  |       记录值    | 
+| ------- | -------- |      ------     |
+|    A    | WWW      |  45.55.110.124  |
+|    A    | @        |  45.55.110.124  |
+
+然后在你的项目根目录下执行命令`surge`，你会看到下面的内容
+
+```
+Running as mackxinlww@gmail.com (Student)
+
+        project: J:\mackxin\xininn2019\
+         domain: http://xininn.xyz    (这里要写你的自定义的域名)
+         upload: [====================] 100% eta: 0.0s (132 files, 9526667 bytes)
+            CDN: [====================] 100%
+             IP: 45.55.110.124
+
+   Success! - Published to xininn.xyz
+```
+
+## 删除项目
+
+```
+surge teardown xininn.surge.sh
+```
+
+自定义域名项目删除
+```
+surge teardown xininn.xyz
+```
+
+成功的话大概是这样的哈
+
+```
+Success - xininn.surge.sh has been removed.
+自定义域名删除成功的话大概是这样的
+Success - xininn.xyz has been removed.
+```
+
+## 忽略文件或者目录
+
+在我们的项目根目录创建一个文件名为 `.surgeignore` 的文件
+
+### 默认会忽略的文件，就是不用我们自己定义的
+```
+.git
+.*
+*.*~
+node_modules
+bower_components
+```
+
+### 把默认的忽略文件移除
+
+我们只需要在自己自定义的 `.surgeignore` 里把要取消忽略的文件前加个英文的感叹号，如下：
+
+```
+!node_modules  (这个的意思就是把node_modules这个文件夹从默认的忽略文件中取消掉了)
+```
+
+### 自己自定义的忽略文件
+```
+psd/  （这个是忽略psd这个文件夹，不部署到服务区上）
+```
 
 
 
