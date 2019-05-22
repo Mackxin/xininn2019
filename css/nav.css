@@ -519,8 +519,8 @@ footer p {
 #louti{
     position: fixed;
     bottom: 100px;
-    right: 50px;
-    width: 80px;
+    right: 40px;
+    width: 60px;
     height: 728px;
     border-radius: 5px;
     background-color: #f6f9fa;
@@ -528,7 +528,7 @@ footer p {
 }
 #louti a{
     display: inline-block;
-    width: 80px;
+    width: 60px;
     height: 28px;
     color: #000;
     text-align: center;
