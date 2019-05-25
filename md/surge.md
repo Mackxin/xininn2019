@@ -14,7 +14,7 @@
 
 ## 全局安装surge
 
-在windows终端输入的命令：  `surge install --global surge` 
+在windows终端输入的命令：  `npm install --global surge` 
 
 完成后大概就是下面这样子的了
 
@@ -129,7 +129,7 @@ surge --domain https://xininn.surge.sh
 
 在你的域名哪里解析一下(下面列举的是我在阿里万网解析的，你也可以用CNAME类型来解析，我试过也是可以的，下面演示的是A类型来解析哈)
 
-| 记录类型 | 主机记录  |       记录值    | 
+| 记录类型 | 主机记录  |       记录值    |
 | ------- | -------- |      ------     |
 |    A    | WWW      |  45.55.110.124  |
 |    A    | @        |  45.55.110.124  |
