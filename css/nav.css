@@ -512,16 +512,19 @@ footer p {
     .zz-box .zz-boxs h2{
         font-size: 1.8rem;
     }
+    .topbtn{
+        display: none;
+    }
 }
 /* 赞助页面代码结束 */
 
 /* 楼梯效果开始 */
 #louti{
     position: fixed;
-    bottom: 100px;
+    bottom: 88px;
     right: 40px;
     width: 60px;
-    height: 728px;
+    height: 676px;
     border-radius: 5px;
     background-color: #f6f9fa;
     border: 1px solid #d2dae6;
@@ -529,7 +532,7 @@ footer p {
 #louti a{
     display: inline-block;
     width: 60px;
-    height: 28px;
+    height: 26px;
     color: #000;
     text-align: center;
     line-height: 28px;
@@ -542,3 +545,28 @@ footer p {
     color: #fff;
 }
 /* 楼梯效果结束 */
+
+/* 返回顶部开始 */
+.topbtn{
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+}
+.topbtn a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #ff1d55;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 24px;
+    transition: all .6s ease-in-out;
+}
+.topbtn a:hover{
+    background-color: #ff1d55;
+    color: #fff;
+}
+/* 返回顶部结束 */
