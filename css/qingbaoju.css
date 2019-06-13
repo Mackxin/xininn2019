@@ -63,6 +63,9 @@ body{
     .cons-box .cons{
         width: 98%;
     }
+    .cons-box .cons .con .neirong{
+        overflow: hidden;
+    }
 }
 
 .cons-box .cons .con{
@@ -82,14 +85,14 @@ body{
     }
 }
 .cons-box .cons .con:hover{
-    background-color: #ff1d55;
-    color: #fff;
-    cursor: pointer;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     transform: translate(0,12px,0);
 }
 .cons-box .cons .con:hover .con-bottom{
     color: #fff;
+    background-color: #ff1d55;
+    transition: all .6s ease-in-out;
+    border-radius: 0 0 10px 10px;
 }
 .cons-box .cons .con p{
     padding: 18px;
