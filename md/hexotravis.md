@@ -81,17 +81,11 @@ git push -u origin master
 
 ### 回到我们的电脑桌面
 
-打开Git Bash Here命令窗口，我们输入下面的命令,然后回车确定
-
-```
-hexo init
-```
-
 稍微等一下就可以看到我们的空文件夹多出来很多文件了哈
 
-在正式完全操作命令之前，我先简单说一下我的搭建思路，首先hexo博客的源码我是放在blog分支上，到时生成的静态页面我是放在master分支上的哈，各位切记线理顺的我的思路哈。当然你也可以弄两个仓库，一个仓库放hexo源码，一个仓库放生成的静态页面哈
+这里我先简单说一下我的搭建思路，首先hexo博客的源码我是放在blog分支上，到时生成的静态页面我是放在gh-pages分支上的哈，各位切记线理顺的我的思路哈。当然你也可以弄两个仓库，一个仓库放hexo源码，一个仓库放生成的静态页面哈
 
-这里我要新建一个blog分支（存放我的hexo源码），master分支放生成的静态页面哈
+这里我要在master分支（存放我的hexo源码），gh-pages分支放生成的静态页面哈
 
 在`xinkezhan`根目录下输入下面的命令
 
@@ -100,12 +94,12 @@ git init
 初始化这个仓库后，我们有一个默认的master分支
 git add .
 git commit -m "first commit"
-git checkout -b blog    创建blog分支并切换到blog分支
+git checkout -b gh-pages    创建gh-pages分支并切换到gh-pages分支
 ```
 
-好我们已经切换到blog分支了
+好我们已经切换到gh-pages分支了
 
-现在我们的仓库一共有两个分支，一个是master（默认的），一个是自己新建的blog的，两个分支的内容都存着hexo源码
+现在我们的仓库一共有两个分支，一个是master（默认的），一个是自己新建的gh-pages的，两个分支的内容都存着hexo源码
 
 现在我们在blog分支上，我们来新建一篇文章，用命令
 
@@ -162,35 +156,32 @@ git push -u origin blog
 
 ```
 language: node_js
-node_js:
-- 8.9.0
+
+node_js: stable  # 要安装的node版本为当前的稳定版
+
 cache:
   directories:
-  - node_modules
-before_install:
-- npm install hexo-cli -g
+  - node_modules # 要缓存的文件夹
+
 install:
-- npm install
+  - npm install
+
 script:
-- hexo clean
-- hexo generate
-after_script:
+  - hexo clean
+  - hexo g
+
+after_script:   # 最后执行的命令
   - cd ./public
   - git init
   - git config user.name "xininn"
   - git config user.email "850907478@qq.com"
   - git add .
-  - git commit -m "TravisCI 自动部署"
-  # Github Pages
-  - git push --force --quiet "https://${xinkezhan}@${GH_REF}" master:master
+  - git commit -m "zidong bushu"
+  - git push --force --quiet "https://${GITHUB_REPO_TOKEN}@github.com/xininn/hexoboke.git" master:gh-pages
 
 branches:
   only:
-  - blog 
+    - master # 触发持续集成的分支
 
-env:
- global:
-   # Github Pages
-   - GH_REF: github.com/xininn/xinkezhan  
 ```
 
