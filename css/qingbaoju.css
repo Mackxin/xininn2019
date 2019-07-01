@@ -113,6 +113,14 @@ body{
     justify-content: space-around;
     color: #ff1d55;
 }
+.cons-box .cons .con p a{
+    color: #ff1d55;
+    transition: .8s ease-in-out;
+}
+.cons-box .cons .con p a:hover{
+    background-color: #ff1d55;
+    color: #fff;
+}
 @media (max-width: 700px){
     .cons-box .cons .con{
         width: 96%;
