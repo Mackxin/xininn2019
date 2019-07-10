@@ -123,3 +123,72 @@ document.getElementById('p').focus();
 ```javascript
 document.getElementById('p').childElementCount; //数字
 ```
+
+## childNodes属性
+
+返回节点的子节点集合(包括文本节点、注释节点等)
+
+```javascript
+document.body.childNodes
+```
+
+## children属性
+
+返回元素的子元素集合
+
+`document.body.children`
+
+```javascript
+<button>anniu</button>
+<p id='xin'></p>
+document.getElementsByTagName('button')[0].addEventListener('click',function(){
+  var x = document.body.children;
+  var text = '';
+  for(var i = 0; i < x.length;i++){
+    // text = text + x[i] + '<br>';
+    text = text + x[i].tagName + '<br>';
+  }
+  document.getElementById('xin').innerHTML = text;
+})
+```
+
+## nodeName属性
+
+返回节点的节点名称
+
+```javascript
+document.body.nodeName
+```
+## tagName属性
+
+返回元素的标签名
+
+```javascript
+element.tagName
+```
+
+## classList
+
+返回元素的类名,是只读属性，你可以通过使用add()和remove()方法修改它
+
+```javascript
+document.getElementsByTagName('p')[0].classList.add('xin');
+document.getElementsByTagName('p')[0].classList.add('xin','xiner','mackxin');
+document.getElementsByTagName('p')[0].classList.length;
+document.getElementsByTagName('p')[0].classList.remove('xin');
+document.getElementsByTagName('p')[0].classList.item(0); //获取当前元素的第一个类名，序号从零开始
+document.getElementsByTagName('p')[0].classList.contains("wen"); //查看当前元素有没有wen这个类名，值为布尔值哈
+document.getElementsByTagName('p')[0].classList.toggle('newClassName');
+```
+
+查看元素是否存在 "mystyle" 类，如果存在则移除另外一个类名:
+
+```javascript
+var x = document.getElementById("myDIV");
+
+if (x.classList.contains("mystyle")) {
+  x.classList.remove("anotherClass");
+} else {
+  alert("Could not find it.");
+}
+```
