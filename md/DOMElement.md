@@ -192,3 +192,32 @@ if (x.classList.contains("mystyle")) {
   alert("Could not find it.");
 }
 ```
+
+##  className
+
+设置或返回元素的 class 属性
+
+```javascript
+element.className = class
+element.className
+```
+
+```javascript
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("myP").className = "test";
+  } else {
+    document.getElementById("myP").className = "";
+  }
+}
+```
+
+## click()
+
+用来模拟鼠标左键单击一个元素
+
+> element.click() 
+
+ 
