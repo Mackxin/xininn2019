@@ -110,5 +110,11 @@ article section div.ximg{
     margin: 10px auto;
 }
 article section div img{
+    width: 100%;
     max-height: 32rem;
 }
+/* @media (max-width: 767px) {
+    article section div img{
+        width: 100%;
+    }
+} */
