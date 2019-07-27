@@ -102,8 +102,8 @@ a{
 }
 .update .update-box p a{
     display: inline-block;
-    width: 100px;
-    background-color: #f7f30f;
+    padding: 0 10px;
+    background-color: #f7f30a;
     font-weight: 600;
     color: #ff1d55;
     font-size: 13px;
