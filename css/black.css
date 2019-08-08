@@ -1,0 +1,20 @@
+/* 暗黑模式开始 */
+.black-body{
+    background-color: #010101;
+    transition: .6s ease-in-out;
+}
+.nav-content .nav-content-box section ul li{
+    border: none;
+}
+.black-louti{
+    background-color: #010101 !important;
+    border: none !important;
+    transition: .6s ease-in-out;
+}
+.black-louti a{
+    color: #345 !important;
+}
+.black-louti a:hover{
+    color: #fff !important;
+}
+/* 暗黑模式结束 */
