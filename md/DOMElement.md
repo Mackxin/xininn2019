@@ -363,3 +363,8 @@ document.getElementById("myDIV").contains(span);
 将焦点放在指定的元素上
 
 > document.getElementById("myAnchor").focus();
+
+## querySelector()
+
+
+
