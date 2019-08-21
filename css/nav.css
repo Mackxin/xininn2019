@@ -552,22 +552,25 @@ footer p {
     height: 36px;
     position: fixed;
     bottom: 32px;
-    right: 32px;
+    right: 52px;
 }
 .topbtn a{
     display: inline-block;
-    width: 36px;
-    height: 36px;
-    border: 2px solid #ff1d55;
     border-radius: 50%;
     text-align: center;
     line-height: 36px;
     font-size: 24px;
+}
+.topbtn a svg{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    fill: #ff1d55;
     transition: all .6s ease-in-out;
 }
-.topbtn a:hover{
+.topbtn a:hover svg{
     background-color: #ff1d55;
-    color: #fff;
+    fill: #fff;
 }
 /* 返回顶部结束 */
 
