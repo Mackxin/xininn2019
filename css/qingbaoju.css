@@ -123,6 +123,14 @@ body{
 }
 @media (max-width: 700px){
     .cons-box .cons .con{
-        width: 96%;
+        width: 98%;
+        padding-bottom: 20px;
     }
+}
+.con .neirong a.hidden{
+    color: #fff!important;
+}
+.con .neirong a.hidden:hover{
+    background-color: #fff!important;
+    color: #fff!important;
 }
