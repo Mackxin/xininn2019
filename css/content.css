@@ -180,9 +180,6 @@ footer{
         width: 50%;
         line-height: 48px;
     }
-    nav ul li a{
-
-    }
     nav{
         margin-bottom: 36px;
     }
@@ -191,6 +188,9 @@ footer{
     }
     article section h2{
         font-size: 1.5rem;
+    }
+    article section div.ximg img{
+        width: 100%;
     }
     .video ul li{
         width: 100%;
