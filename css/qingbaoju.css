@@ -70,7 +70,7 @@ body{
 
 .cons-box .cons .con{
     width: 48%;
-    height: 180px;
+    /* height: 180px; */
     margin: 10px;
     position: relative;
     transition: .6s ease-in-out;
@@ -101,7 +101,7 @@ body{
     text-align: center;
 }
 .cons-box .cons .con p.neirong{
-    margin-bottom: 8px;
+    margin-bottom: 18px;
 }
 .cons-box .cons .con p.con-bottom{
     position: absolute;
