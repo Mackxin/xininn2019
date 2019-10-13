@@ -10,12 +10,12 @@ npm install -g nodeppt
 
 ## 使用命令
 
-```
+```markdown
 创建一个新的md文件
 nodeppt new xin.md
 启动一个md文件 webpack dev server
 nodeppt serve xin.md
-编译产出一个md文件
+编译出静态页面源码
 nodeppt build xin.md
 ```
 
@@ -31,7 +31,7 @@ theme: moon //皮肤
 highlightStyle: monokai_sublime //hljs的样式
 headFiles: //头部的文件
 usemathjax: //如果为yes，则引入mathjax，默认不建议开启，导出文件太多
-date: 2015年12月20日
+date: 2019年10月12日
 ```
 
 ## 一些类名
@@ -39,7 +39,7 @@ date: 2015年12月20日
 - delay-800
 - aligncenter
 - size-50
-- frame
+- frame  边框
 - bounce
 - features
 - bg-trans-dark
@@ -53,6 +53,17 @@ date: 2015年12月20日
 - text-pull-right
 - alignright
 - alignleft
+- content-left
+- content-right
+- content-center
+- right-bottom
+- right
+- slide-top
+- slide-bottom
+- left-bottom
+- right-bottom
+- text-pull-right
+- whitelogo
 
 ## 转场效果
 
@@ -92,7 +103,7 @@ date: 2015年12月20日
 演讲笔记：N
 网格背景：Enter
 
-## 文字类
+## text类
 
 - text-landing
 - text-intro
@@ -100,10 +111,16 @@ date: 2015年12月20日
 - text-data
 - text-context
 - text-cols
+- text-serif
+- text-symbols
+- text-span
+- text-subtitle
 
 ## 背景类
 
 - bg-primary  #44d
+- bg-apple
+- bg-green
 - bg-secondary  #67d
 - bg-light  #edf2f7
 - body   #f7f9fb
@@ -116,6 +133,12 @@ date: 2015年12月20日
 - bg-purple  #62b
 - bg-trans-dark   rgba(0,0,0,0.5)
 - bg-trans-light  rgba(255,255,255,0.2)
+
+## image
+
+- dark
+- light
+- anim
 
 ## 渐变色
 
