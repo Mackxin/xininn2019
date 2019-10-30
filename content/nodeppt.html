@@ -151,7 +151,7 @@
                 - mermaid
                 - katex
             </code></pre>
-            
+
 
             <div class="xyin">
                 <p>title: 这是演讲的题目</p>
@@ -162,80 +162,72 @@
 
         <section>
 
-            <h2>5.<slide>语法</h2>
+            <h2>5.&lt;slide&gt;语法</h2>
 
             <div>
-                <p>官网：<a target="_blank" href="https://www.file.io">file.io</a></p>
+                <p>nodeppt 会根据 &lt;slide&gt; 对整个 markdown 文件进行拆分，拆成单页的幻灯片内容</p>
             </div>
 
             <div class="xyin">
-                <p>免费版本每个文件限制为5GB</p>
-                <p>临时文件共享方便，匿名和安全</p>
-            </div>
-
-        </section>
-
-        <section>
-
-            <h2>6.BitSend</h2>
-
-            <div>
-                <p>官网：<a target="_blank" href="https://bitsend.jp/">BitSend</a></p>
+                <p>class/style 等：正常的 class 类，可以通过这个控制居中（aligncenter），内容位置，背景色等</p>
+                <p>image：背景图片，基本语法 image="img_url"</p>
+                <p>video：背景视频，基本语法 video="video_src1,video_src2"</p>
+                <p>:class：wrap 的 class，下面详解</p>
             </div>
 
             <div class="xyin">
-                <p>一款日本的免费文件存储服务，没有文件大小限制，无限存储空间，最长保存时间为 14 天</p>
-                <p>文件上传后会得到下载链接和删除链接，可以设置密码保护、有效日期和最大下载次数</p>
+                <p>每个 slide 会解析成下面的 html 结构：</p>
+                <xmp>
+                    <section class="slide" attrs...>
+                        <div class="wrap" wrap="true">// 具体 markdown 渲染的内容</div>
+                    </section>
+                </xmp>
+                <p>其中&lt;slide&gt; 的class等会被解析到 &lt;section&gt;标签上面，而:class则被解析到div.wrap上面，例如：</p>
+                <xmp>
+                    <slide :class="size-50" class="bg-primary"></slide>
+                </xmp>
+                <p>output 为：</p>
+                <xmp>
+                    <section class="slide bg-primary">
+                        <div class="wrap size-50" wrap="true">// 具体 markdown 渲染的内容</div>
+                    </section>
+                </xmp>
             </div>
 
-        </section>
-
-        <section>
-
-            <h2>7.Send Anywhere</h2>
-
             <div>
-                <p>官网：<a target="_blank" href="https://send-anywhere.com/">Send Anywhere</a></p>
+                <p>背景&图片</p>
+                <p>背景演示地址：<a target="_blank" href="https://js8.in/nodeppt/background.html">在线演示background</a> </p>
+                <p>背景仓库地址：<a target="_blank" href="https://github.com/ksky521/nodeppt/blob/master/site/background.md">在线仓库background</a></p>
+                <hr>
+                <p>样式</p>
+                <p>样式演示地址：<a target="_blank" href="https://js8.in/nodeppt/classes.html">在线演示classes</a> </p>
+                <p>样式仓库地址：<a target="_blank" href="https://github.com/ksky521/nodeppt/blob/master/site/classes.md">在线仓库classes</a></p>
+                <hr>
+                <p>布局</p>
+                <p>布局演示地址：<a target="_blank" href="https://js8.in/nodeppt/layout.html">在线演示layout</a> </p>
+                <p>布局仓库地址：<a target="_blank" href="https://github.com/ksky521/nodeppt/blob/master/site/layout.md">在线仓库layout</a></p>
             </div>
 
             <div class="xyin">
-                <p>一款跨平台的文件传输工具，提供了各个平台的客户端哈</p>
-                <p>最大支持10GB的文件传输哈</p>
-                <p>支持最大 4GB 大小的单个文件</p>
-                <p>发送到设备的文件最多可以在服务器上保留48小时</p>
-                <p>支持直接在线分享文件和链接分享服务，还支持和发送到制动邮箱哈</p>
-                <p>支持Android、ios、windows、macOS、Linux、Kindle、chrome程序等</p>
+                <p>&lt;slide&gt;的image 会被解析成背景大图，常见的支持方式有：</p>
+                <xmp>
+                    这是一个普通的背景图
+                    <slide image="https://source.unsplash.com/UJbHNoVPZW0/"></slide>
+                </xmp>
+                <xmp>
+                    这张背景图会在图片上面蒙一层偏黑色的透明层
+                    <slide image="https://source.unsplash.com/UJbHNoVPZW0/ .dark"></slide>
+                </xmp>
+                <xmp>
+                    这张背景图会在图片上面蒙一层偏白色的透明层
+                    <slide image="https://source.unsplash.com/UJbHNoVPZW0/ .light"></slide>
+                </xmp>
+                <xmp>
+                    这张背景图会缓慢动
+                    <slide class="bg-black aligncenter" image="https://source.unsplash.com/n9WPPWiPPJw/ .anim">
+                </xmp>
             </div>
 
-        </section>
-
-        <section>
-
-            <h2>8.We Transfer</h2>
-
-            <div>
-                <p>官网：<a target="_blank" href="https://wetransfer.com/">We Transfer</a></p>
-            </div>
-
-            <div class="xyin">
-                <p>免费的支持上传最大 2GB 的文件</p>
-                <p>服务器保存的时间是 7 天（过期后会自动删除文件）</p>
-                <p>提供了邮件和链接两种分享方式</p>
-            </div>
-
-        </section>
-
-        <section>
-
-            <h2>9.FilePizza</h2>
-
-            <div>
-                <p>官网：<a target="_blank" href="https://file.pizza/">FilePizza</a></p>
-            </div>
-
-            <div class="xyin">
-                <p>浏览器中的免费对等文件传输</p>
-            </div>
 
         </section>
 
