@@ -499,13 +499,19 @@ footer p {
         width: 30%;
     }
 }
-@media (max-width:1200px){    
+@media (max-width:1200px){  
+    h2.zhiding{
+        font-size: 1rem!important;
+    }  
     .zz-box .zz-boxs ul li{
         width: 48%;
         margin-bottom: 10px;
     }
 }
 @media (max-width:790px){    
+    h2.zhiding{
+        font-size: .8rem!important;
+    }
     .zz-box .zz-boxs ul li{
         width: 100%;
     }
