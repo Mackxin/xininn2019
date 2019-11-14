@@ -2,6 +2,12 @@
 
 > 2019-10-19
 
+> 更新时间  2019-11-14
+
+## 软件
+
+文件批量替换修改及格式转换小工具集合XCLWinKits   https://www.wodeabc.com/Article/Show/8002027
+
 ## P站
 
 > https://pic.tjsky.net/
@@ -74,3 +80,6 @@ magnet:?xt=urn:btih:27607162bccfcb32a4346326a245c95a54afcf76
 秀人网    magnet:?xt=urn:btih:7df2f53c526a73cd850ea1291bd598bf3f1bab12
 
 
+## mac
+
+精品MAC应用分享   https://xclient.info/
