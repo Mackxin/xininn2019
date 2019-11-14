@@ -21,8 +21,13 @@
 
 ## 字体
 
-> https://www.cufonfonts.com/
-> 
+https://www.cufonfonts.com/
+
+http://www.hellofont.cn/
+
+http://www.qiuziti.com/
+
+http://fonts.safe.360.cn/
 
 ## 网盘资源
 
