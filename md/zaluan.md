@@ -15,6 +15,10 @@
 > https://pic.tjsky.net/pixiv/
 > 搬运PIXIV每天排行榜前50图片资源
 
+## PT
+
+https://et8.org/  (已注册)
+
 ## Neuk加速 最新域名获取仓库
 
 > https://github.com/Neukchill/neukfun
