@@ -8,6 +8,35 @@
 
 文件批量替换修改及格式转换小工具集合XCLWinKits   https://www.wodeabc.com/Article/Show/8002027
 
+## Magisk模块
+
+仓库：https://github.com/topjohnwu/Magisk/releases
+
+### TWRP 文件管理器：直接删除模块文件
+
+首先，如果手机拥有自带文件管理功能的第三方 Recovery 支持，比如 TWRP，那我们可以借助 Recovery 的文件管理器直接删除问题 Magisk 模块的数据文件夹来卸载模块。这里以 TWRP 为例，进入 TWRP 后依次点击「高级->文件管理」，然后定位至以下路径：
+
+/data/adb/modules
+
+### 模块
+
+- AD_Hosts 拦截广告（通过修改系统Host拦截广告）   
+  https://github.com/E7KMbb/AD-hosts/releases   
+  国内任性源：https://github.com/vokins/yhosts   
+  国外稳定源：https://github.com/StevenBlack/hosts   
+  去除影视广告：https://github.com/jdlingyu/ad-wars/   
+- Magisk Manager for Recovery Mode(mm)   
+  用于在 recovery 中管理 Magisk 模块，若模块导致了严重问题可通过此方式删掉有问题模块   
+  在终端中执行 sh /sdcard/mm   
+  或者在 Recovery 模式终端下执行 sh /sdcard/mm   
+- Tai Chi   
+  https://taichi.cool/README_CN.html
+- App Systemizer(Terminal Emulator)   
+  该模块用来将第三方应用变为系统应用，需配合 Terminal Emulator 应用使用（可使用其他同类软件）   
+  打开 Terminal Emulator 后依次输入以下命令 su systemize, 然后按提示操作即可
+- YouTube Vanced   
+  这个模块主要就是实现 YouTube Premium 的去广告、后台播放等功能，还加了暗色主题   
+
 ## P站
 
 > https://pic.tjsky.net/
