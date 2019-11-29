@@ -18,6 +18,32 @@
 
 /data/adb/modules
 
+## 生成器归类
+
+以下十个可以在这里找到使用方法：https://www.uisdc.com/10-poisonous-design-artifact
+
+双色图片生成器  http://duotone.shapefactory.co/
+
+故障艺术生成器  http://photomosh.com/
+
+炫光生成器  http://codepen.io/tsuhre/full/BYbjyg
+
+镜像炫光生成器  http://weavesilk.com/
+
+渐变层生成器  http://codepen.io/pissang/full/geajpX
+
+流动渐变层生成器  http://codepen.io/Yakudoo/full/rJjOJx/
+
+体素生成器  http://demo.marpi.pl/biomes
+
+图片体素化生成器  http://pissang.github.io/voxelize-image
+
+剪纸风格生成器​  http://pissang.github.io/papercut-box-art
+
+万箭齐发背景生成器  http://wangyasai.github.io/Stars-Emmision
+
+
+
 ### 模块
 
 - AD_Hosts 拦截广告（通过修改系统Host拦截广告）   
