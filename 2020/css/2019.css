@@ -1,0 +1,201 @@
+div,
+body,
+html,
+p,
+a,
+h1,
+h2,
+h3,
+span {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background: url('../05/img/beijing.jpg') no-repeat center center; */
+    background: #2f62cf;
+    background-attachment: fixed;
+    color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    width: 100%;
+}
+.sidenav {
+    height: 720px;
+    width: 40px;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    right: 100px;
+    margin-top: -360px;
+    overflow-x: hidden;
+    text-align: center;
+}
+.sj{
+    width:5%;
+    height: 31rem;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-wrap: wrap;
+    position: fixed;
+}
+.sj a{
+    width: 100%;
+    height: 1rem;
+    font-size: .7rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 1rem;
+}
+.sidenav h2 {
+    font-size: 16px;
+    padding: 1.5rem;
+}
+.sidenav a {
+    text-decoration: none;
+    font-size: .8rem;
+    color: #fff;
+    display: block;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+    margin: 2 auto;
+}
+.sidenav.sj a{
+    float: left;
+}
+.sidenav a.mackxin {
+    height: 30px;
+    line-height: 30px;
+}
+
+.sidenav a:not(.mackxin) {
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.sidenav a:hover {
+    background-color: hsla(0, 82%, 51%);
+}
+
+.con {
+    width: 100%;
+    /* background-color: #222; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main {
+    margin: 10px auto;
+    font-size: 1.2rem;
+    border-radius: .6rem;
+    width: 70%;
+    padding: .6rem;
+    transition: all 300ms ease-out;
+    background-color: #f5f3f318;
+}
+div.notone{
+    text-align: center;
+}
+.main:not(.notone) {
+    border: 1px solid #f5f3f318;
+}
+.main:not(.notone):hover {
+    background-color: #f6f6f618;
+}
+.main h2 {
+    text-align: center;
+    line-height: 3.6rem;
+    color: #ee0c0cd3;
+}
+.main a {
+    display: block;
+    text-align: center;
+}
+.main p {
+    font-size: 1.2rem;
+    text-indent: 2.4rem;
+}
+.main a img {
+    width: 100%;
+}
+.main p:last-child {
+    text-indent: 0;
+    direction: rtl;
+}
+.main p.alick {
+    display: flex;
+    justify-content: center;
+}
+
+.main p.alick a {
+    display: inline-block;
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    text-indent: 0;
+    border: 1px solid #f5f3f318;
+    transition: .5s ease-in-out;
+    border-radius: .6rem;
+    color: #fff;
+    background-color: #261e92;
+    overflow: hidden;
+}
+
+.main p.alick a:hover {
+    transform: scale(1.1);
+}
+
+.main h1,
+.main h3 {
+    color: #fff;
+}
+.main h1{
+    margin: 20px auto;
+    font-size: 2rem;
+}
+.main h3{
+    font-size: 1.3rem;
+}{
+
+}
+.main p {
+    padding: .6rem;
+    color: #fff;
+}
+
+@media screen and (max-width:1200px){
+    .sidenav{
+        right: 20px;
+    }
+    .main{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .sidenav{
+        display: none;
+    }
+    .main{
+        width: 90%;
+    }
+    .sj{
+        display: flex;
+    }
+}
