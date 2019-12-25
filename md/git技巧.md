@@ -24,4 +24,14 @@
 
 好了，至此这个问题就解决了哈
 
-## 
+## git报错解决
+
+```
+remote: Permission to Mackxin/xininn2019.git denied to xininn.
+fatal: unable to access 'https://github.com/Mackxin/xininn2019.git/': The requested URL returned error: 403
+```
+
+解决办法：
+
+在windows系统上，找到控制面板，看到用户账户，点击凭据管理器，选择windows凭据，在普通凭据那一栏找到对应的github账号信息，点击删除即可哈
+
