@@ -2,11 +2,9 @@ body,div,h1,h2,h3,p,a,span,ul,li,section{
     padding: 0;
     margin: 0;
 }
-/* body{
-    background: url('../img/beijing.jpg') no-repeat center center;
-    background-attachment: fixed;
-    color: #fff;
-} */
+body{
+    font-family: "mp-quote", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+}
 a{
     text-decoration: none;
     color: #ff1d55;
