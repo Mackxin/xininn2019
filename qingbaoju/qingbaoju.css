@@ -258,6 +258,7 @@ header .head ul li a.active{
     margin: 8px 0;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 .qingbaoju .cons .con p.xin-center{
     text-align: center;
@@ -267,8 +268,8 @@ header .head ul li a.active{
     height: 150px;
 }
 .qingbaoju .cons .con img.m-300{
-    width: 300px;
-    height: 300px;
+    max-width: 10rem;
+    max-height: 10rem;
 }
 /* 情报局内容结束 */
 
