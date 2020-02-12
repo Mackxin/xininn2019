@@ -1,0 +1,411 @@
+ /*a标签颜色类名 a-red */
+ /*时间线里面的内容图片尺寸为650+200 */
+ /*此页单独公共样式开始*/
+ body{
+    background-color: #fff;
+    color: #FFCF00;
+}
+/*此页单独公共样式结束*/
+/* header开始 */
+header {
+   width: 100%;
+   height: 80px;
+   line-height: 80px;
+   position: fixed;
+   top: 0;
+   transition: top 0.3s;
+   z-index: 666;
+   background-color: #fff;
+   box-shadow: 0 0.313rem 0.75rem rgba(7, 9, 25, .05), 0 0.126rem 0.15rem rgba(7, 9, 25, .03);
+}
+
+header .head {
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   transition: all .3s;
+   font-weight: bold;
+}
+
+header .head h1{
+   text-align: center;
+   color: #FF1D55;
+}
+
+header .head ul {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+header .head ul li a {
+   display: block;
+   padding: 0 18px;
+   height: 36px;
+   line-height: 36px;
+   border-radius: 4px;
+   transition: all .5s;
+   color: #FF1D55;
+   font-weight: bold;
+}
+header .head ul li a:hover{
+   background-color: #dedee4;
+}
+header .head ul li a.active{
+   background-color: #FF1D55;
+   color: #fff;
+}
+
+/* header结束 */
+
+/* 情报局介绍和广告区域开始 */
+
+.wrapper{
+   width: 80%;
+   /* height: 200px; */
+   margin: 10px auto;
+   margin-top: 110px;
+   display: flex;
+   justify-content: space-between;
+}
+.wrapper .jieshao{
+   width: 50%;
+}
+.wrapper .jieshao ul{
+   /* background-color: black; */
+   height: 100%;
+   padding: 10px 20px;
+}
+.wrapper .jieshao ul li{
+   line-height: 32px;
+}
+.wrapper .jieshao ul li a{
+   color: #FF1D55;
+}
+.wrapper .jieshao h1,
+.wrapper .jieshao h2,
+.wrapper .jieshao li{
+   color: #7a7b97;
+}
+
+.wrapper .jinzhu{
+   width: 50%;
+}
+.wrapper .jinzhu ul{
+   background-color: black;
+}
+.wrapper .jinzhu ul li{
+   width: 50%;
+   float: left;
+}
+.wrapper .jinzhu ul li a{
+   display: block;
+   width: 100%;
+   height: 100px;
+   line-height: 100px;
+   text-align: center;
+   color: #7a7b97;
+   font-size: 1.5rem;
+   border: 1px solid #7a7b97;
+}
+.wrapper .jinzhu ul li:nth-of-type(1) a{
+   border-bottom: none;
+}
+.wrapper .jinzhu ul li:nth-of-type(2) a{
+   border-bottom: none;
+   border-left: none;
+}
+.wrapper .jinzhu ul li:nth-of-type(4) a{
+   border-left: none;
+}
+.wrapper .jinzhu ul li a img{
+   width: 100%;
+   height: 100%;
+}
+/* 情报局介绍和广告区域结束 */
+
+
+/* 情报局内容开始 */
+.qingbaoju{
+   width: 80%;
+   margin: 0 auto;
+   position: relative;
+   margin-bottom: 50px;
+}
+/*下面是时间线*/
+.qingbaoju::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   background-color: #FF1D55;
+   width: 10px;
+   left: 50%;
+   margin-left: -5px;
+}
+.qingbaoju .cons{
+   width: 50%;
+   position: relative;
+   left: 0;
+   padding: 20px 60px;
+}
+.qingbaoju .cons::after{
+   content: '';
+   position: absolute;
+   width: 25px;
+   height: 25px;
+   right: -17px;
+   /* background-color: #474e5d; */
+   background-color: #fff;
+   border: 4px solid #FF1D55;
+   top: 50%;
+   margin-top: -15px;
+   border-radius: 50%;
+   z-index: 1;
+}
+.qingbaoju .cons.right::after{
+   left: -16px;
+}
+.qingbaoju .cons.left{
+   padding-left: 0;
+}
+.qingbaoju .cons.right{
+   left: 50%;
+   padding-right: 0;
+}
+.qingbaoju .cons .con{
+   padding: 14px 20px;
+   border-radius: 10px;
+   /* border: 1px solid #b2c1ce; */
+   transition: all .5s ease-in-out;
+}
+.qingbaoju .cons .con:hover{
+   box-shadow: 0 36px 40px -24px rgba(0, 36, 100, 0.3);
+   background-color: #edf5fa;
+}
+.qingbaoju .cons .con.con-left::before{
+   content: " ";
+   height: 0;
+   position: absolute;
+   top: 50%;
+   margin-top: -9px;
+   width: 0;
+   z-index: 1;
+   right: 50px;
+   border: medium solid white;
+   border-width: 10px 0 10px 10px;
+   border-color: transparent transparent transparent #FF1D55;
+}
+.qingbaoju .cons .con.con-right::after{
+   content: " ";
+   height: 0;
+   position: absolute;
+   top: 50%;
+   margin-top: -9px;
+   width: 0;
+   z-index: 1;
+   left: 50px;
+   border: medium solid white;
+   border-width: 10px 10px 10px 0;
+   border-color: transparent #FF1D55 transparent transparent;
+}
+.qingbaoju .cons .con h2{
+   text-align: center;
+   line-height: 50px;
+   color: #FF1D55;
+}
+.qingbaoju .cons .con p,
+.qingbaoju .cons .con a{
+   text-indent: 2rem;
+   color: #7a7b97;
+}
+.qingbaoju .cons .con p{
+   line-height: 26px;
+}
+.qingbaoju .cons .con p span {
+   color: #FF1D55;
+}
+.qingbaoju .cons .con section{
+   margin-top: 12px;
+   display: flex;
+   justify-content: center;
+}
+.qingbaoju .cons .con section div{
+   width: 200px;
+   height: 30px;
+   line-height: 30px;
+   background-color: #222331;
+   color: #fff;
+   font-size: .9rem;
+   border-radius: 6px;
+   text-align: center;
+}
+
+.qingbaoju .cons .con section div time{
+   background-color: #FFCF00;
+   border-radius: 6px;
+   line-height: 24px;
+   display: inline-block;
+   padding: 0 10px;
+   color: #000;
+   font-weight: bolder;
+}
+.qingbaoju .cons .con a.a-red{
+   color: #FF1D55;
+}
+.qingbaoju .cons .con img{
+   margin: 8px 0;
+   width: 100%;
+   height: 100%;
+}
+.qingbaoju .cons .con p.xin-center{
+   text-align: center;
+}
+.qingbaoju .cons .con img.m-150{
+   width: 150px;
+   height: 150px;
+}
+.qingbaoju .cons .con img.m-300{
+   width: 300px;
+   height: 300px;
+}
+/* 情报局内容结束 */
+
+/* 右下角固定区域开始 */
+#dingImg{
+     width: 100px;
+     height: 100px;
+     position: fixed;
+     right: 10px;
+     bottom: 70px;
+     display: none;
+     transition: all 5s;
+}
+#dingImg img{
+   width: 100%;
+}
+#ding{
+   display: none;
+}
+#ding a{
+   position: fixed;
+   right: 30px;
+   bottom: 10px;
+   transition: 0.3s;
+   padding: 10px;
+   color: white;
+   border-radius: 50%;
+ }
+#ding a svg{
+   width: 36px;
+   height: 36px;
+   border-radius: 50%;
+   fill: #FF1D55;
+   transition: all .6s ease-in-out;
+}
+#ding a:hover svg{
+   fill: #fff;
+   background-color: #FF1D55;
+}
+/* 右下角固定区域结束 */
+
+/* 移动端适配开始 */
+@media screen and (max-width: 720px){
+   /* header{
+   } */
+   header .head {
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+   }
+   header .head h1{
+       font-size: 1.8rem;
+       height: 50px;
+       line-height: 50px;
+   }
+   header .head ul{
+       text-align: center;
+   }
+   header .head ul li a{
+       height: 30px;
+       line-height: 30px;
+   }
+   .wrapper{
+       width: 100%;
+       margin-top: 100px;
+       flex-direction: column;
+   }
+   .wrapper .jinzhu ul li{
+       width: 100%;
+   }
+   .wrapper .jieshao h2{
+       font-size: 1.3rem;
+   }
+   .wrapper .jieshao,
+   .wrapper .jinzhu {
+       width: 100%;
+       text-align: center;
+       margin: 5px 0;
+   }
+   .wrapper .jinzhu ul li a{
+       width: 80%;
+       margin: 1px auto;
+       border: 1px solid #7a7b97;
+   }
+   .wrapper .jinzhu ul li:nth-of-type(1) a,
+   .wrapper .jinzhu ul li:nth-of-type(2) a,
+   .wrapper .jinzhu ul li:nth-of-type(4) a{
+       border: 1px solid #7a7b97;
+   }
+   .qingbaoju::before{
+       left: 10px;
+       margin-left: -32px;
+   }
+   .qingbaoju .cons{
+       width: 100%;
+       padding: 10px 0px;   
+   }
+   .qingbaoju .cons,
+   .qingbaoju .cons.right{
+       left: 20px;
+   }
+   .qingbaoju .cons.right::after,
+   .qingbaoju .cons::after {
+       left: -53px;
+   }
+   .qingbaoju .cons .con h2{
+       font-size: 1.2rem;
+   }
+   .qingbaoju .cons .con p{
+       font-size: .9rem;
+       line-height: 1.4rem;
+   }
+   .qingbaoju .cons.left{
+       padding-right: 0;
+   }
+   .qingbaoju .cons .con.con-left::before{
+       content: " ";
+       height: 0;
+       position: absolute;
+       top: 50%;
+       margin-top: -9px;
+       width: 0;
+       z-index: 1;
+       left: -10px;
+       border: medium solid white;
+       border-width: 10px 10px 10px 0;
+       border-color: transparent #FF1D55 transparent transparent;
+   }
+   .qingbaoju .cons .con.con-right::after{
+       left: -10px;
+   }
+   #ding a{
+       right: 0;
+   }
+   #dingImg img{
+       display: none;
+   }
+}
+/* 移动端适配结束 */
+

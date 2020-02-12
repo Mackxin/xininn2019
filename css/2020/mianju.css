@@ -1,0 +1,91 @@
+body,html,div,section,h1,h2,ul,li,a,p,span{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+::selection{
+    background-color: #ff1d55;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 16px;
+}
+section{
+    max-width: 1400px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+section h1{
+    color: #ff1d55;
+}
+section p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #7a7b97;
+}
+section h2{
+    text-align: center;
+    padding: 1rem;
+    color: #ff1d55;
+}
+section ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+section ul li{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: .8rem;
+    position: relative;
+}
+section ul li img{
+    width: 90%;
+    height: 180px;
+    border-radius: 10px;
+}
+section ul li.fan::before{
+    content: '翻';
+    display: block;
+    position: absolute;
+    background-color: #FFCF00;
+    color: black;
+    right: .6rem;
+    bottom: 2rem;
+    border-radius: 6px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    z-index: 666;
+}
+section ul li a{
+    text-align: center;
+    background-color: #FFCF00;
+    color: black;
+    padding: 5px 8px;
+    margin-top: 6px;
+    border-radius: .6rem;
+    font-size: .8rem;
+}

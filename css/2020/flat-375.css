@@ -1,0 +1,290 @@
+
+.xin{
+    width: 100%;
+    height: 100%;
+    color: #7a7b97;
+}
+.xin .xin-left{
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    font-size: .9rem;
+    background-color: #f4f6fb;
+}
+.xin .xin-right{
+    width: 60%;
+    height: auto;
+    margin-left:40%;
+}
+
+/* 导航左侧开始 */
+.xin .xin-left div {
+    display: flex;
+    justify-content: center;
+}
+.xin .xin-left div.xin-logo a{
+    display: block;
+    width: 120px;
+    height: 120px;
+    color: #7a7b97;
+}
+.xin .xin-left div.xin-logo a img{
+    width: 100%;
+    height: 100%;
+}
+.xin .xin-left .xin-icon a svg{
+    width: .8rem;
+    margin: 0 4px;
+}
+.xin .xin-left .xin-louti,
+.xin .xin-left .xin-kezhan {
+    display: flex;
+    flex-wrap: wrap;
+}
+.xin .xin-left .xin-kezhan a{
+    display: inline-block;
+    padding: 8px 0;
+    width: 50%;
+    text-align: center;
+    font-size: .6rem;
+    color: #7a7b97;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+.xin .xin-left .xin-kezhan a::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff1d55;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.xin .xin-left .xin-kezhan a:hover, 
+.xin .xin-left .xin-kezhan a:focus, 
+.xin .xin-left .xin-kezhan a:active {
+    color: white;
+}
+.xin .xin-left .xin-kezhan a:hover:before, 
+.xin .xin-left .xin-kezhan a:focus:before, 
+.xin .xin-left .xin-kezhan a:active:before {
+    transform: scale(1);
+  }
+.xin .xin-left .xin-louti a{
+    display: inline-block;
+    font-size: .6rem;
+    padding: 6px 0;
+    width: 33.3333333%;
+    text-align: center;
+    color: #7a7b97;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.xin .xin-left .xin-louti a::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #7a7b97;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.xin .xin-left .xin-louti a:hover, 
+.xin .xin-left .xin-louti a:focus, 
+.xin .xin-left .xin-louti a:active {
+    color: white;
+  }
+  .xin .xin-left .xin-louti a:hover:before, 
+  .xin .xin-left .xin-louti a:focus:before, 
+  .xin .xin-left .xin-louti a:active:before {
+    transform: scaleX(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+.xin .xin-left .xin-top{
+    width: 100%;
+}
+/* 导航左侧结束 */
+
+/* 导航右侧开始 */
+.xin .xin-right .zhiding{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.xin .xin-right .zhiding p{
+    width: 50%;
+    text-align: center;
+    overflow: hidden;
+    max-height: 100px;
+}
+.xin .xin-right .zhiding p a img{
+    width: 100%;
+    height: 100%;
+}
+/* .xin .xin-right .zhiding p:nth-child(even){
+    background-color: #edf5fa;
+}
+.xin .xin-right .zhiding p:nth-child(odd){
+    background-color: #667cb3;
+} */
+.xin .xin-right .vip{
+    width: 100%;
+    text-align: center;
+}
+.xin .xin-right .vip ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.xin .xin-right .vip ul li{
+    width: 33.333%!important;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.xin .xin-right .vip ul li::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff1d55;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.xin .xin-right .vip ul li:hover a, 
+.xin .xin-right .vip ul li:focus a, 
+.xin .xin-right .vip ul li:active a {
+    color: #fff;
+  }
+  .xin .xin-right .vip ul li:hover:before, 
+  .xin .xin-right .vip ul li:focus:before, 
+  .xin .xin-right .vip ul li:active:before {
+    transform: scaleY(1);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+.xin .xin-right .vip ul li a{
+    display: block;
+    width: 100%;
+    color: #7a7b97;
+    transition: .5s;
+    font-size: .6rem;
+}
+.xin .xin-right .xiaoxi{
+    padding: 10px 10px;
+}
+.xin .xin-right .xiaoxi p{
+    color: #7a7b97;
+    text-indent: 2rem;
+    font-size: .6rem;
+}
+
+.xin .xin-right section{
+    width: 96%;
+    margin: 20px 2%;
+    background-color: #f4f6fb!important;
+}
+
+.xin .xin-right .xininn-head {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.xin .xin-right .xininn-head h2{
+    color: #ff1d55;
+    font-size: 1rem;
+    text-indent: .4rem;
+}
+.xin .xin-right .xininn-head div a,
+.xin .xin-right .xininn-head div span{
+    display: inline-block;
+    width: 68px;
+    font-size: .5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #7a7b97;
+}
+.xin .xin-right section{
+    border-radius: 10px;
+    background-color: #a9b4cf;
+}
+.xin .xin-right section ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.xin .xin-right section ul li{
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+.xin .xin-right section ul li::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #ff1d55;
+    height: 3px;
+    transition-property: left, right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.xin .xin-right section ul li:hover:before, 
+.xin .xin-right section ul li:focus:before, 
+.xin .xin-right section ul li:active:before {
+    left: 0;
+    right: 0;
+  }
+.xin .xin-right section ul li a{
+    width: 100%;
+    display: inline-block;
+    min-width: 120px;
+    height: 35px;
+    line-height: 35px;
+    color: #345;
+    font-size: .6rem;
+    transition: 1s;
+}
+/* 导航右侧结束 */
