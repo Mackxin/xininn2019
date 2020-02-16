@@ -1,112 +1,163 @@
-div,p,span,a,ul,li,header,h1,h2,h3,h4,section,html,body{
-    padding: 0;
-    margin: 0;
-    font-family: Arial;
-}
-ul li,.x-box .x-boxs .x-lis li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-::selection {
-    background:#ff1d55; 
-    color:#fff;
-}
-html,body{
+body,html{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:center;
+    box-sizing: border-box;
 }
 body{
-    font-family: "mp-quote", -apple-system-font, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
-}
-header{
-    width: 100%;
-    height: 150px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-header .x-logo a img{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    transition: all .8s ease-in-out;
+.xininn-index{
+    width: 1200px;
+    border-radius: 10px;
+    transition: all .8s;
 }
-header .x-logo a img:hover{
-    transform: rotate(360deg);
-}
-.x-nav{
+/* .xininn-index:hover{
+    box-shadow: -5px -1px 35px 2px rgba(255,29,85,0.64);
+} */
+.xininn-index header{
     width: 100%;
-    height: 36px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
 }
-.x-nav div{
-    position: relative;
+.xininn-index header a{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+}
+.xininn-index header a img{
+    width: 100%;
+}
+.xininn-index header div h1,
+.xininn-index header div h2,
+.xininn-index header div h3{
+    line-height: 42px;
+    color: #7a7b97;
+}
+.xininn-index header div h1{
+    color: #ff1d55;
+}
+.xininn-index section{
+    width: 100%;
+}
+.xininn-index section ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.xininn-index section ul li{
+    width: 23%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1%;
+    line-height: 150px;
     overflow: hidden;
 }
-.x-nav div a{
-    display: block;
+.xininn-index section ul li:hover a{
+    transform: scale(1.5);
+}
+.xininn-index section ul li:nth-of-type(11):hover a,
+.xininn-index section ul li:nth-of-type(12):hover a{
+    transform: scale(1.1);
+}
+.xininn-index section ul li a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 2.4rem;
+    transition: all .3s;
+}
+.xininn-index section ul li img{
     width: 150px;
-    height: 36px;
-    color: #ff1d55;
-    line-height: 36px;
-    font-size: 16px;
-    text-align: center;
-    transition: 1s;
-    font-weight: bold;
 }
-.x-nav div a::before{
-    content: '';
-    width: 0px;
-    height: 0px;
-    border: 5px solid transparent;
-    border-top: 5px solid #ff1d55;
-    border-right: 5px solid #ff1d55;
-    display: inline-block;
-    position: absolute;
-    top: 1px;
-    right: 1px;
+.xininn-index section ul li.index-img a{
+    line-height: 150px;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
-.x-nav div a:hover{
-    text-align: center;
-    font-size: 16px;
+.xininn-index section ul li:nth-of-type(1){
+    background: linear-gradient(235deg, #FFFFFF 0%, #000F25 100%), linear-gradient(180deg, #6100FF 0%, #000000 100%), linear-gradient(235deg, #FFA3AC 0%, #FFA3AC 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #00C9B1 calc(70% + 1px), #00C9B1 100%), linear-gradient(125deg, #FFA3AC 0%, #FFA3AC 40%, #00043C calc(40% + 1px), #00043C 60%, #005D6C calc(60% + 1px), #005D6C 70%, #00C9B1 calc(70% + 1px), #00C9B1 100%);
+    background-blend-mode: soft-light, screen, darken, normal;
 }
-.x-nav div a::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 0.2em;
-    background-color: #ff1d55;
-    left: 100%;
-    bottom: 0px;
-    transition: all .3s ease-in-out;
+.xininn-index section ul li:nth-of-type(2){
+    background: linear-gradient(125deg, #00FF57 0%, #010033 40%, #460043 70%, #F0FFC5 100%), linear-gradient(55deg, #0014C9 0%, #410060 100%), linear-gradient(300deg, #FFC700 0%, #001AFF 100%), radial-gradient(135% 215% at 115% 40%, #393939 0%, #393939 40%, #849561 calc(40% + 1px), #849561 60%, #EED690 calc(60% + 1px), #EED690 80%, #ECEFD8 calc(80% + 1px), #ECEFD8 100%), linear-gradient(125deg, #282D4F 0%, #282D4F 40%, #23103A calc(40% + 1px), #23103A 70%, #A0204C calc(70% + 1px), #A0204C 88%, #FF6C00 calc(88% + 1px), #FF6C00 100%);
+    background-blend-mode: overlay, screen, overlay, overlay, normal;
 }
-.x-nav div a:hover::after{
-    left: 0;
+.xininn-index section ul li:nth-of-type(3){
+    background: linear-gradient(235deg, #BABC4A 0%, #000000 100%), linear-gradient(235deg, #0026AC 0%, #282534 100%), linear-gradient(235deg, #00FFD1 0%, #000000 100%), radial-gradient(120% 185% at 25% -25%, #EEEEEE 0%, #EEEEEE 40%, #7971EA calc(40% + 1px), #7971EA 50%, #393E46 calc(50% + 1px), #393E46 70%, #222831 calc(70% + 1px), #222831 100%), radial-gradient(70% 140% at 90% 10%, #F5F5C6 0%, #F5F5C6 30%, #7DA87B calc(30% + 1px), #7DA87B 60%, #326765 calc(60% + 1px), #326765 80%, #27253D calc(80% + 1px), #27253D 100%);
+    background-blend-mode: overlay, lighten, overlay, color-burn, normal;
 }
-.x-h1{
-    width: 100%;
-    height: 36px;
-    text-align: center;
-    line-height: 36px;
-    margin-top: 5px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+.xininn-index section ul li:nth-of-type(4){
+    background: linear-gradient(238deg, rgb(130, 255, 0) 0%, rgb(0, 84, 166) 100%), linear-gradient(238deg, rgb(0, 255, 69) 0%, rgb(0, 0, 0) 100%), linear-gradient(238deg, rgb(255, 255, 255) 48%, rgb(3, 0, 151) 100%), radial-gradient(100% 85% at 0% 100%, rgb(0, 0, 0) 0%, rgb(0, 131, 255) 50%, rgb(255, 0, 0) 100%), radial-gradient(100% 225% at 0% 100%, rgb(255, 0, 0) 0%, rgb(66, 255, 0) 100%), radial-gradient(100% 140% at 100% 0%, rgb(0, 134, 62) 0%, rgb(0, 239, 255) 50%, rgb(0, 113, 186) 100%);
+    background-blend-mode: color-dodge, overlay, multiply, difference, difference, normal;
 }
-.x-h1 h1{
-    font-size: 1.2rem;
-    text-align: center;
-    color: #ff1d55;
+.xininn-index section ul li:nth-of-type(5){
+    background: linear-gradient(180deg, #F7D6FF 0%, #005686 100%), linear-gradient(180deg, #FFFFFF 0%, #060046 100%), linear-gradient(130deg, #00FFA3 0%, #1A003C 100%), linear-gradient(307deg, #FF0000 0%, #3300C6 100%), radial-gradient(50% 72% at 50% 50%, #004584 0%, #00FFB2 100%), radial-gradient(100% 140% at 100% 0%, #5ED500 0%, #2200AA 100%);
+    background-blend-mode: soft-light, overlay, difference, difference, color-burn, normal;
 }
-@media screen and (min-width:320px) and (max-width:736px){
-    .x-nav{
-        margin-bottom: 50px;
+.xininn-index section ul li:nth-of-type(6){
+    background: linear-gradient(320.54deg, #00069F 0%, #120010 72.37%), linear-gradient(58.72deg, #69D200 0%, #970091 100%), linear-gradient(121.28deg, #8CFF18 0%, #6C0075 100%), linear-gradient(121.28deg, #8000FF 0%, #000000 100%), linear-gradient(180deg, #00FF19 0%, #24FF00 0.01%, #2400FF 100%), linear-gradient(52.23deg, #0500FF 0%, #FF0000 100%), linear-gradient(121.28deg, #32003A 0%, #FF4040 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
+    background-blend-mode: screen, color-dodge, color-burn, screen, overlay, difference, color-dodge, normal;
+}
+.xininn-index section ul li:nth-of-type(7){
+    background: linear-gradient(120deg, #FF00C7 0%, #51003F 100%), linear-gradient(120deg, #0030AD 0%, #00071A 100%), linear-gradient(180deg, #000346 0%, #FF0000 100%), linear-gradient(60deg, #0029FF 0%, #AA0014 100%), radial-gradient(100% 165% at 100% 100%, #FF00A8 0%, #00FF47 100%), radial-gradient(100% 150% at 0% 0%, #FFF500 0%, #51D500 100%);
+    background-blend-mode: overlay, color-dodge, overlay, overlay, difference, normal;
+}
+.xininn-index section ul li:nth-of-type(8){
+    background: linear-gradient(121.28deg, #31BC00 0%, #000000 100%), linear-gradient(180deg, #5200FF 0%, #1A0050 100%), linear-gradient(341.1deg, #FF0000 7.52%, #1700A4 77.98%), radial-gradient(49.82% 80.51% at 49.82% 50%, #5A0069 0%, #FF3D00 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
+    background-blend-mode: color-dodge, overlay, difference, difference, normal;
+}
+.xininn-index section ul li:nth-of-type(9){
+    background: linear-gradient(300deg, rgb(0, 3, 71) 10%, rgb(0, 0, 0) 100%), linear-gradient(300deg, rgb(255, 255, 255) 120%, rgb(36, 0, 255) 100%), linear-gradient(190deg, rgb(0, 68, 170) 0%, rgb(255, 255, 255) 100%), radial-gradient(100% 200% at 70% 0%, rgb(67, 221, 255) 0%, rgb(255, 0, 0) 100%), linear-gradient(0deg, rgb(219, 0, 255) 0%, rgb(58, 255, 40) 100%), radial-gradient(200% 100% at 50% 80%, rgb(106, 0, 213) 0%, rgb(0, 224, 255) 100%), radial-gradient(100% 150% at 0% 0%, rgb(0, 255, 255) 5%, rgb(255, 0, 0) 100%);
+    background-blend-mode: lighten, multiply, overlay, overlay, color-burn, color-burn, normal;
+}
+.xininn-index section ul li:nth-of-type(10){
+    background: linear-gradient(286.78deg, #36006B 4.99%, #000000 96.56%), linear-gradient(238.72deg, #A30000 0%, #FFFFFF 100%), radial-gradient(100% 188.01% at 76.14% 0%, #43DDFF 0%, #FF0000 100%), linear-gradient(0deg, #DB00FF 0%, #14FF00 100%), radial-gradient(59.2% 100% at 50% 100%, #6A00D5 0%, #00E0FF 100%), radial-gradient(100% 148.07% at 0% 0%, #FF9900 0%, #001AFF 100%);
+    background-blend-mode: lighten, overlay, overlay, color-burn, color-burn, normal;
+}
+.xininn-index section ul li:nth-of-type(11){
+    background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), radial-gradient(100% 233.99% at 0% 100%, #B70000 0%, #AD00FF 100%), linear-gradient(307.27deg, #1DAC92 0.37%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #EAFF6B 0%, #006C7A 57.29%, #2200AA 100%);
+    background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
+}
+.xininn-index section ul li:nth-of-type(12){
+    background: linear-gradient(140.54deg, #060028 27.63%, #8000FF 100%), linear-gradient(180deg, #000000 0%, #C8C5C5 100%), radial-gradient(80.99% 100% at 50% 0%, #FFFFFF 0%, #030080 100%), linear-gradient(180deg, #42FF00 0%, #7500AC 100%), linear-gradient(133.98deg, #F90000 30.43%, #0073B4 100%), radial-gradient(55.83% 101.07% at 50% -1.07%, #8F00FF 0%, #0F0018 100%), radial-gradient(70.41% 100% at 50% 0%, #D5B300 0%, #2200AA 100%);
+    background-blend-mode: overlay, color-dodge, darken, difference, difference, difference, normal;
+}
+@media (max-width:1020px){
+    .xininn-index section ul li{
+        width: 31.3%;
     }
-
+}
+@media (max-width:780px){
+    .xininn-index section ul li{
+        width: 48%;
+    }
+    body{
+        height: auto;
+    }
+}
+@media (max-width:510px){
+    .xininn-index section ul li a{
+        font-size: 2rem;
+    }
+    .xininn-index section ul li:hover a{
+        transform: scale(1.3);
+    }
+    .xininn-index section ul li:nth-of-type(11),
+    .xininn-index section ul li:nth-of-type(12){
+        width: 100%;
+    }
+    .xininn-index header div h2{
+        font-size: 1.3rem;
+    }
+    .xininn-index header div h3{
+        font-size: 1.1rem;
+    }
 }
