@@ -410,3 +410,28 @@ header .head ul li a.active{
 }
 /* 移动端适配结束 */
 
+/* help开始 */
+.help{
+    width: 80%;
+    margin: 50px auto;
+}
+.help section{
+    width: 100%;
+    padding: 30px 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.help section:hover{
+    box-shadow: 0 36px 40px -24px rgba(0, 36, 100, 0.3);
+    background-color: #a8d3ee;
+}
+.help section h2{
+    color: #FF1D55;
+}
+.help section p{
+    color: #7a7b97;
+    line-height: 26px;
+}
+/* help结束 */
+
